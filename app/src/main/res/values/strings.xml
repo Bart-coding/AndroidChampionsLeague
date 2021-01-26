@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Android Project</string>
+    <string name="champions_league">ChampionsLeague</string>
+    <string name="home">Home</string>
+    <string name="results">Results</string>
+    <string name="groups">Groups</string>
+    <string name="scorers">Scorers</string>
+    <string name="settings">Settings</string>
+    <string name="about">AboutUs</string>
+    <string name="exit">Exit</string>
+    <string name="exit_message">Are you sure you want to exit?</string>
+    <string name="exit_confirm">YES</string>
+    <string name="exit_unconfirm">NO</string>
+    <string name="theme">Theme</string>
+    <string name="theme_bright">Bright</string>
+    <string name="theme_dark">Dark</string>
+</resources>

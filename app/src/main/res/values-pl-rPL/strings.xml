@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Projekt Android</string>
+    <string name="champions_league">Liga Mistrzów</string>
+    <string name="home">Strona główna</string>
+    <string name="results">Wyniki</string>
+    <string name="groups">Grupy</string>
+    <string name="scorers">Strzelcy</string>
+    <string name="settings">Ustawienia</string>
+    <string name="about">O nas</string>
+    <string name="exit">Wyjście</string>
+    <string name="exit_message">Jesteś pewien, że chcesz wyjść?</string>
+    <string name="exit_confirm">TAK</string>
+    <string name="exit_unconfirm">NIE</string>
+    <string name="theme">Motyw</string>
+    <string name="theme_bright">Jasny</string>
+    <string name="theme_dark">Ciemny</string>
+</resources>

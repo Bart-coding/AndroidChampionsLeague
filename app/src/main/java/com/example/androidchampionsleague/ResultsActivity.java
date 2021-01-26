@@ -3,17 +3,17 @@ package com.example.androidchampionsleague;
 import android.os.Bundle;
 import android.view.View;
 
-public class AboutUs extends RootActivity {
+public class ResultsActivity extends RootActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_us);
+        setContentView(R.layout.activity_results);
         drawerLayout = findViewById(R.id.drawer_layout);
     }
 
     @Override
-    public void ClickAboutUs(View view){
+    public void ClickResults(View view){
         recreate();
     }
 }

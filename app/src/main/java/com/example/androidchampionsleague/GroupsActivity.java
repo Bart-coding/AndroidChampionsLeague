@@ -3,7 +3,7 @@ package com.example.androidchampionsleague;
 import android.os.Bundle;
 import android.view.View;
 
-public class Groups extends RootActivity {
+public class GroupsActivity extends RootActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

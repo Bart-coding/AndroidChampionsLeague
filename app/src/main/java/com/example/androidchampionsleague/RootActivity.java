@@ -10,7 +10,6 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -73,58 +72,58 @@ public class RootActivity extends AppCompatActivity {
     @Override
     protected void onPause(){
         super.onPause();
-        RootActivity.closeDrawer(drawerLayout);
+        CloseDrawer(drawerLayout);
         // wylaczamy listener, zeby nie zzerac zasobow
         sensorManager.unregisterListener(lightEventListener);
     }
 
     public void ClickMenu(View view){
-        RootActivity.openDrawer(drawerLayout);
+        OpenDrawer(drawerLayout);
     }
 
     public void ClickLogo(View view){
-        RootActivity.closeDrawer(drawerLayout);
+        CloseDrawer(drawerLayout);
     }
 
     public void ClickHome(View view){
-        RootActivity.redirectActivity(this,MainActivity.class);
+        RedirectActivity(this, MainActivity.class);
     }
 
-    public void ClickResults(View view){
-        RootActivity.redirectActivity(this,Results.class);
+    public void ClickResults(View view) {
+        RedirectActivity(this, ResultsActivity.class);
     }
 
-    public void ClickGroups(View view){
-        RootActivity.redirectActivity(this,Groups.class);
+    public void ClickGroups(View view) {
+        RedirectActivity(this, GroupsActivity.class);
     }
 
-    public void ClickScorers(View view){
-        RootActivity.redirectActivity(this,Scorers.class);
+    public void ClickScorers(View view) {
+        RedirectActivity(this, ScorersActivity.class);
     }
 
     public void ClickSettings(View view) {
-        RootActivity.redirectActivity(this,Settings.class);
+        RedirectActivity(this, SettingsActivity.class);
     }
 
-    public void ClickAboutUs(View view){
-        RootActivity.redirectActivity(this,AboutUs.class);
+    public void ClickAboutUs(View view) {
+        RedirectActivity(this, AboutUsActivity.class);
     }
 
     public void ClickExit(View view){
-        RootActivity.exit(this);
+        Exit(this);
     }
 
-    public static void openDrawer(DrawerLayout drawerLayout) {
+    public void OpenDrawer(DrawerLayout drawerLayout) {
         drawerLayout.openDrawer(GravityCompat.START);
     }
 
-    public static void closeDrawer(DrawerLayout drawerLayout) {
+    public void CloseDrawer(DrawerLayout drawerLayout) {
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START);
         }
     }
 
-    public static void exit(Activity activity) {
+    public void Exit(Activity activity) {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setTitle(R.string.exit);
         builder.setMessage(R.string.exit_message);
@@ -144,7 +143,7 @@ public class RootActivity extends AppCompatActivity {
         builder.show();
     }
 
-    public static void redirectActivity(Activity activity, Class aClass) {
+    public void RedirectActivity(Activity activity, Class aClass) {
         Intent intent = new Intent(activity,aClass);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);

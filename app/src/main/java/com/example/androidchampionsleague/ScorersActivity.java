@@ -3,8 +3,9 @@ package com.example.androidchampionsleague;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
 
@@ -12,21 +13,16 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 import static com.example.androidchampionsleague.RetrofitInstance.getRetrofitInstance;
 
 public class ScorersActivity extends RootActivity{
-
-    ListView listView;
 
    ArrayList<Scorer> scorersList = new ArrayList<>();
 
@@ -35,8 +31,6 @@ public class ScorersActivity extends RootActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scorers);
         drawerLayout = findViewById(R.id.drawer_layout);
-
-        listView = findViewById(R.id.ListView); // lista strzelcow w widoku
 
         Retrofit retrofit = getRetrofitInstance();
 
@@ -86,9 +80,6 @@ public class ScorersActivity extends RootActivity{
                             item.setName(player.getString("name"));
                             item.setTeam(team.getString("name"));
                             item.setGoals(s.getInt("numberOfGoals"));
-//                            item=player.getString("name") + " (";
-//                            item+=team.getString("name") + ") ";
-//                            item+="Goals: " + s.getString("numberOfGoals");
                             scorersList.add(item);
 
                         } catch (JSONException e) {
@@ -96,7 +87,7 @@ public class ScorersActivity extends RootActivity{
                         }
                     }
                 }
-                setListView();
+                initRecyclerView();
             }
             @Override
             public void onFailure(Call call, Throwable t) {
@@ -105,13 +96,11 @@ public class ScorersActivity extends RootActivity{
         });
     }
 
-    private void setListView() {
-        ArrayAdapter adapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_list_item_1,
-                scorersList
-        );
-        listView.setAdapter(adapter);
+    private void initRecyclerView(){
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        ScorersRecyclerViewAdapter adapter = new ScorersRecyclerViewAdapter(this, scorersList);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     @Override

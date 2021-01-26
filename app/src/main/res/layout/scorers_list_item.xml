@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/parent_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_text_view"
+        android:gravity="center"
+        android:id="@+id/number" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scorer"
+        android:id="@+id/scorer_name"
+        android:layout_toRightOf="@+id/number"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="goals"
+        android:id="@+id/goals"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:textSize="17sp"/>
+
+</RelativeLayout>

@@ -13,13 +13,18 @@
         android:orientation="vertical">
         <include
             layout="@layout/main_toolbar"/>
-        <TextView
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="@string/scorers"-->
+<!--            android:textSize="50sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:gravity="center"/>-->
+        <ListView
+            android:id="@+id/ListView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/scorers"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+            android:layout_gravity="center"/>
     </LinearLayout>
     <RelativeLayout
         android:layout_width="300dp"

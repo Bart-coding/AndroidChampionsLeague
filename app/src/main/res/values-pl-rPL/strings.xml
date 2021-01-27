@@ -23,4 +23,5 @@
     <string name="quarterfinal_stage">Ćwierćfinał</string>
     <string name="semifinal_stage">Półfinał</string>
     <string name="final_stage">Finał</string>
+    <string name="choose_matchday">Wybierz kolejkę</string>
 </resources>

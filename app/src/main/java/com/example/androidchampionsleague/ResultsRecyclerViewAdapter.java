@@ -1,6 +1,8 @@
 package com.example.androidchampionsleague;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +38,13 @@ public class ResultsRecyclerViewAdapter extends RecyclerView.Adapter<ResultsRecy
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(mContext, mStages.get(position), Toast.LENGTH_SHORT).show();
+                if(mStages.get(position) == mStages.get(0)){
+                    Intent intent = new Intent(mContext, ConcreteResultsActivity.class);
+                    mContext.startActivity(intent);
+                }
+                else{
+                    Toast.makeText(mContext, mStages.get(position), Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

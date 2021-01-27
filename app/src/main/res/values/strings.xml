@@ -22,4 +22,5 @@
     <string name="quarterfinal_stage">Quarterfinal</string>
     <string name="semifinal_stage">Semifinal</string>
     <string name="final_stage">Final</string>
+    <string name="choose_matchday">Choose Matchday</string>
 </resources>

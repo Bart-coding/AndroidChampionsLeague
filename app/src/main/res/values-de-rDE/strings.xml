@@ -9,6 +9,7 @@
     <string name="scorers">Torschützen</string>
     <string name="settings">Einstellungen</string>
     <string name="about">Über uns</string>
+    <string name="authors">Autoren</string>
     <string name="exit">Ausfahrt</string>
     <string name="exit_message">Sind Sie sicher, dass Sie die Seite verlassen wollen?</string>
     <string name="exit_confirm">JA</string>

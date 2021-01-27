@@ -13,13 +13,34 @@
         android:orientation="vertical">
         <include
             layout="@layout/main_toolbar"/>
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/about"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/authors"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="@color/main"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bartłomiej Chilmon"
+                android:textSize="30sp"
+                android:textColor="@color/main"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mateusz Rytwiński"
+                android:textSize="30sp"
+                android:textColor="@color/main"
+                android:gravity="center"/>
+        </LinearLayout>
     </LinearLayout>
     <RelativeLayout
         android:layout_width="300dp"

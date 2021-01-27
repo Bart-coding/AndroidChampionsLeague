@@ -81,7 +81,7 @@ public class GroupsRecyclerViewAdapter extends RecyclerView.Adapter<GroupsRecycl
             team_points_2 = itemView.findViewById(R.id.team_points_2);
             team_points_3 = itemView.findViewById(R.id.team_points_3);
             team_points_4 = itemView.findViewById(R.id.team_points_4);
-            parentLayout = itemView.findViewById(R.id.parent_layout);
+            parentLayout = itemView.findViewById(R.id.parent_layout_groups);
         }
     }
 }

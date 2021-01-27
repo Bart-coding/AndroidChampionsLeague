@@ -58,7 +58,7 @@ public class ScorersRecyclerViewAdapter extends RecyclerView.Adapter<ScorersRecy
             number = itemView.findViewById(R.id.number);
             name = itemView.findViewById(R.id.scorer_name);
             goals = itemView.findViewById(R.id.goals);
-            parentLayout = itemView.findViewById(R.id.parent_layout);
+            parentLayout = itemView.findViewById(R.id.parent_layout_scorers);
         }
     }
 }

@@ -54,7 +54,7 @@ public class ResultsRecyclerViewAdapter extends RecyclerView.Adapter<ResultsRecy
         public ViewHolder(View itemView) {
             super(itemView);
             stageName = itemView.findViewById(R.id.stage_name);
-            parentLayout = itemView.findViewById(R.id.parent_layout);
+            parentLayout = itemView.findViewById(R.id.parent_layout_results);
         }
     }
 }

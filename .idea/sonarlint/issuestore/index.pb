@@ -7,3 +7,15 @@ P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 v
 Fapp/src/main/java/com/example/androidchampionsleague/MainActivity.java,a\9\a9c67e2d22ebe9aa04c04aa12df016b95adfee94
+y
+Iapp/src/main/java/com/example/androidchampionsleague/AboutUsActivity.java,f\1\f1d7aee0ab777fa75c04dc1b8f3868fba2871e89
+x
+Happ/src/main/java/com/example/androidchampionsleague/ScorersService.java,c\9\c916b1a39ff5311854314e5e9eafdc63a71a78a2
+z
+Japp/src/main/java/com/example/androidchampionsleague/RetrofitInstance.java,2\f\2fac3ddec7df3a3aca238d3bdb598efbf2ffaad1
+p
+@app/src/main/java/com/example/androidchampionsleague/Scorer.java,9\6\96ec1e1d4b634c312abd50a4307e4d06e9ec71a7
+„
+Tapp/src/main/java/com/example/androidchampionsleague/ScorersRecyclerViewAdapter.java,6\d\6db927ee225a82f1ef21fd44b6b20721d0ad2ee5
+y
+Iapp/src/main/java/com/example/androidchampionsleague/ScorersActivity.java,1\7\171132eea14bab64d263295a5167828cb3b3d370

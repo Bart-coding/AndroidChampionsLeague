@@ -5,6 +5,7 @@
     <string name="home">Startseite</string>
     <string name="results">Ergebnisse</string>
     <string name="groups">Gruppen</string>
+    <string name="group">Gruppe</string>
     <string name="scorers">Torschützen</string>
     <string name="settings">Einstellungen</string>
     <string name="about">Über uns</string>
@@ -15,4 +16,6 @@
     <string name="theme">Thema</string>
     <string name="theme_bright">Hell</string>
     <string name="theme_dark">Dunkel</string>
+    <string name="team">Mannschaft</string>
+    <string name="points">Punkte</string>
 </resources>

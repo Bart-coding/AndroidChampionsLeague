@@ -18,4 +18,8 @@
     <string name="theme_dark">Dunkel</string>
     <string name="team">Mannschaft</string>
     <string name="points">Punkte</string>
+    <string name="group_stage">Gruppenphase</string>
+    <string name="quarterfinal_stage">Viertelfinale</string>
+    <string name="semifinal_stage">Halbfinale</string>
+    <string name="final_stage">Finale</string>
 </resources>

@@ -18,4 +18,8 @@
     <string name="theme_dark">Ciemny</string>
     <string name="team">Drużyna</string>
     <string name="points">Punkty</string>
+    <string name="group_stage">Faza Grupowa</string>
+    <string name="quarterfinal_stage">Ćwierćfinał</string>
+    <string name="semifinal_stage">Półfinał</string>
+    <string name="final_stage">Finał</string>
 </resources>

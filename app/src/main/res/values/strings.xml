@@ -17,4 +17,8 @@
     <string name="theme_dark">Dark</string>
     <string name="team">Team</string>
     <string name="points">Points</string>
+    <string name="group_stage">Group Stage</string>
+    <string name="quarterfinal_stage">Quarterfinal</string>
+    <string name="semifinal_stage">Semifinal</string>
+    <string name="final_stage">Final</string>
 </resources>

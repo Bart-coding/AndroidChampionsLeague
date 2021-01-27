@@ -14,13 +14,10 @@
         android:orientation="vertical">
         <include
             layout="@layout/main_toolbar"/>
-        <TextView
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/results"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+            android:id="@+id/recycler_view"/>
     </LinearLayout>
     <RelativeLayout
         android:layout_width="300dp"

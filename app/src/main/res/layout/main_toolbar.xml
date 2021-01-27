@@ -19,6 +19,7 @@
         android:text="@string/champions_league"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="@color/main"
         android:textAlignment="center"
         android:gravity="center_horizontal" />
     <ImageView

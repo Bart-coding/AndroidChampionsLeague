@@ -3,7 +3,7 @@ package com.example.androidchampionsleague;
 import android.os.Bundle;
 import android.view.View;
 
-public class AboutUsActivity extends RootActivity {
+public class AboutUsActivity extends NavigationActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

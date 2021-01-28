@@ -8,6 +8,7 @@ public class AboutUsActivity extends NavigationActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TryChangeTheme();
         setContentView(R.layout.activity_about_us);
         drawerLayout = findViewById(R.id.drawer_layout);
     }

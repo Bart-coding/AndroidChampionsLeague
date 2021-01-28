@@ -9,13 +9,14 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class ConcreteResultsActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+public class ConcreteResultsActivity extends SensorManager implements AdapterView.OnItemSelectedListener{
 
     String[] matchDays= {"Matchday 1", "Matchday 2", "Matchday 3", "Matchday 4", "Matchday 5", "Matchday 6" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TryChangeTheme();
         setContentView(R.layout.activity_concrete_results);
 
         // Linking the Views to Java’s instances

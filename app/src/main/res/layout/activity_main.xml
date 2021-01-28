@@ -20,7 +20,7 @@
             android:text="@string/home"
             android:textSize="50sp"
             android:textStyle="bold"
-            android:textColor="@color/main"
+            android:textColor="?attr/colorPrimary"
             android:gravity="center"/>
     </LinearLayout>
     <RelativeLayout

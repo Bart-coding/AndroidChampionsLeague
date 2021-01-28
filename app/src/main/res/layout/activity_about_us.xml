@@ -24,21 +24,21 @@
                 android:text="@string/authors"
                 android:textSize="50sp"
                 android:textStyle="bold"
-                android:textColor="@color/main"
+                android:textColor="?attr/colorPrimary"
                 android:gravity="center"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Bartłomiej Chilmon"
                 android:textSize="30sp"
-                android:textColor="@color/main"
+                android:textColor="?attr/colorPrimary"
                 android:gravity="center"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Mateusz Rytwiński"
                 android:textSize="30sp"
-                android:textColor="@color/main"
+                android:textColor="?attr/colorPrimary"
                 android:gravity="center"/>
         </LinearLayout>
     </LinearLayout>

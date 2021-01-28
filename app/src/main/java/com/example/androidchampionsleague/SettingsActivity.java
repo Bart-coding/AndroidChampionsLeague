@@ -8,6 +8,7 @@ public class SettingsActivity extends NavigationActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TryChangeTheme();
         setContentView(R.layout.activity_settings);
 
         drawerLayout = findViewById(R.id.drawer_layout);

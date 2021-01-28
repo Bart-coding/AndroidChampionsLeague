@@ -19,6 +19,7 @@ public class GroupsActivity extends NavigationActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TryChangeTheme();
         setContentView(R.layout.activity_groups);
         drawerLayout = findViewById(R.id.drawer_layout);
 

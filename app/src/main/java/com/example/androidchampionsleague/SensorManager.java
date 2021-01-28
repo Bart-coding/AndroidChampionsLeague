@@ -1,6 +1,5 @@
 package com.example.androidchampionsleague;
 
-import android.content.res.Resources;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -20,7 +19,6 @@ public class SensorManager extends AppCompatActivity {
     protected Sensor lightSensor;
     protected SensorEventListener lightEventListener;
     protected float maxValue;
-    protected float currentValue;
     // end
 
     @Override
@@ -44,17 +42,15 @@ public class SensorManager extends AppCompatActivity {
         lightEventListener = new SensorEventListener() {
             @Override
             public void onSensorChanged(SensorEvent sensorEvent) {
-                currentValue = sensorEvent.values[0];
+                SensorValueInstance.setCurrentSensorValue(sensorEvent.values[0]);
                 switch (ThemeToChange()){
                     case 1:
-                        ChangeThemeToLight();
-                        break;
                     case 2:
-                        ChangeThemeToDark();
-                        break;
+                        recreate();
                     default:
-                        break;
+                        return;
                 }
+
             }
 
             @Override
@@ -81,19 +77,16 @@ public class SensorManager extends AppCompatActivity {
     private int ThemeToChange(){
         TypedValue outValue = new TypedValue();
         getTheme().resolveAttribute(R.attr.themeName, outValue, true);
-        if(currentValue >= maxValue / 2 ) {
+
+        if(SensorValueInstance.getCurrentSensorValue() >= maxValue / 2 ) {
             // zmiana tylko wtedy, gdy poprzedni to ciemny motyw
             if("dark".equals(outValue.string)){
-                // ustawiamy jasny motyw
-                Log.e("Theme","DO ZMIANY JASNY" + currentValue);
                 return 1;
             }
         }
         else {
             // zmiana tylko wtedy, gdy poprzedni to jasny motyw
             if("light".equals(outValue.string)) {
-                // ustawiamy ciemny motyw
-                Log.e("Theme","DO ZMIANY CIEMNY" + currentValue);
                 return 2;
             }
         }
@@ -101,16 +94,25 @@ public class SensorManager extends AppCompatActivity {
     }
 
     private void ChangeThemeToLight(){
-        Log.e("Theme","zmiana na jasny" + currentValue);
-        Resources.Theme theme = super.getTheme();
-        //theme.applyStyle(R.style.Theme_AndroidChampionsLeague, true);
+        Log.e("Theme","zmiana na jasny " + SensorValueInstance.getCurrentSensorValue());
         setTheme(R.style.Theme_AndroidChampionsLeague);
     }
 
     private void ChangeThemeToDark(){
-        Log.e("Theme","zmiana na ciemny" + currentValue);
-        Resources.Theme theme = super.getTheme();
-        //theme.applyStyle(R.style.ThemeDark_AndroidChampionsLeague, true);
+        Log.e("Theme","zmiana na ciemny " + SensorValueInstance.getCurrentSensorValue());
         setTheme(R.style.ThemeDark_AndroidChampionsLeague);
+    }
+
+    protected void TryChangeTheme(){
+        switch (ThemeToChange()){
+            case 1:
+                ChangeThemeToLight();
+                break;
+            case 2:
+                ChangeThemeToDark();
+                break;
+            default:
+                break;
+        }
     }
 }

@@ -10,6 +10,7 @@ public class MainActivity extends NavigationActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TryChangeTheme();
         setContentView(R.layout.activity_main);
         
         drawerLayout = findViewById(R.id.drawer_layout);

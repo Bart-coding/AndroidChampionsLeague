@@ -17,6 +17,7 @@ public class ResultsActivity extends NavigationActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TryChangeTheme();
         setContentView(R.layout.activity_results);
         drawerLayout = findViewById(R.id.drawer_layout);
 

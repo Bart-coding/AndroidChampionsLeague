@@ -12,7 +12,7 @@ import retrofit2.Retrofit;
 
 import static com.example.androidchampionsleague.RetrofitInstance.getRetrofitInstance;
 
-public class GroupsActivity extends RootActivity {
+public class GroupsActivity extends NavigationActivity {
 
     private ArrayList<String> groupsList = new ArrayList<>();
 

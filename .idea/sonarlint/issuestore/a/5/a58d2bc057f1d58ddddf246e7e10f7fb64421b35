@@ -1,0 +1,9 @@
+
+V
+java:S4973)"9Use the "equals" method if value comparison was intended.(»à»š8°Œª¨ô.
+
+java:S1319"qThe type of the "stages" object should be an interface such as "List" rather than the implementation "ArrayList".(ä™¶¡8ûÃŸô.
+J
+java:S1604&"(Make this anonymous inner class a lambda(Ì’ïĞüÿÿÿÿ8ûÃŸô.
+W
+java:S1128":Remove this unused import 'android.content.res.Resources'.(ÿÃÜó8°Œª¨ô.

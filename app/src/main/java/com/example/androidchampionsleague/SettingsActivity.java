@@ -3,7 +3,7 @@ package com.example.androidchampionsleague;
 import android.os.Bundle;
 import android.view.View;
 
-public class SettingsActivity extends RootActivity {
+public class SettingsActivity extends NavigationActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

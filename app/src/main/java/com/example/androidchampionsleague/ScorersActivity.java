@@ -22,7 +22,7 @@ import retrofit2.Retrofit;
 
 import static com.example.androidchampionsleague.RetrofitInstance.getRetrofitInstance;
 
-public class ScorersActivity extends RootActivity{
+public class ScorersActivity extends NavigationActivity {
 
    ArrayList<Scorer> scorersList = new ArrayList<>();
 

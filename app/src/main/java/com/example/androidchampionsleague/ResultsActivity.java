@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class ResultsActivity extends RootActivity {
+public class ResultsActivity extends NavigationActivity {
 
     ListView listView;
     ArrayList<String> stagesList = new ArrayList<>();

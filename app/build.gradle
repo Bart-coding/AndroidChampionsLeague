@@ -49,4 +49,13 @@ dependencies {
 
     //cardview
     implementation "androidx.cardview:cardview:1.0.0"
+
+
+    //Sharp fot SVG
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.pixplicity.sharp:library:1.1.0'
+
+
+
+
 }

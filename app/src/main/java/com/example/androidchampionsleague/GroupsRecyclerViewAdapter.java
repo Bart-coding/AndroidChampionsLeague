@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,10 +16,10 @@ import java.util.ArrayList;
 
 public class GroupsRecyclerViewAdapter extends RecyclerView.Adapter<GroupsRecyclerViewAdapter.ViewHolder>{
 
-    private ArrayList<String> mGroups = new ArrayList<>();
+    private ArrayList<Group> mGroups = new ArrayList<>();
     private Context mContext;
 
-    public GroupsRecyclerViewAdapter(Context context, ArrayList<String> groups ) {
+    public GroupsRecyclerViewAdapter(Context context, ArrayList<Group> groups ) {
         mGroups = groups;
         mContext = context;
     }
@@ -31,27 +32,34 @@ public class GroupsRecyclerViewAdapter extends RecyclerView.Adapter<GroupsRecycl
 
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
-//        String [] groups = mGroups.get(position).getTeams();
-//        int [] points = mGroups.get(position).getPoints();
-//        Bitmap [] logos = mGroups.get(position).getBitmaps();
-//
-//        holder.group.setText(mGroups.get(position).getGroup());
-//
-//        holder.team1name.setText(groups[0]);
-//        holder.team1points.setText(String.valueOf(points[0]));
-//        holder.team1image.setImageBitmap(logos[0]);
-//
-//        holder.team2name.setText(groups[1]);
-//        holder.team2points.setText(String.valueOf(points[1]));
-//        holder.team1image.setImageBitmap(logos[1]);
-//
-//        holder.team3name.setText(groups[2]);
-//        holder.team3points.setText(String.valueOf(points[2]));
-//        holder.team1image.setImageBitmap(logos[2]);
-//
-//        holder.team4name.setText(groups[3]);
-//        holder.team4points.setText(String.valueOf(points[3]));
-//        holder.team1image.setImageBitmap(logos[3]);
+        Group group = mGroups.get(position);
+        String [] teams = group.getTeams();
+        int [] points = group.getPoints();
+        String [] logoUrls = group.getLogoUrls();
+
+        String groupName = group.getName();
+        holder.group.setText(String.valueOf(groupName.charAt(groupName.length()-1)));
+
+        holder.team1name.setText(teams[0]);
+        holder.team1points.setText(String.valueOf(points[0]));
+
+        Utils.fetchSvg(mContext, logoUrls[0], holder.team1image); //Mam nadzieje ze zadziala :)
+        //Toast.makeText(mContext, logoUrls[0], Toast.LENGTH_SHORT).show();
+
+        holder.team2name.setText(teams[1]);
+        holder.team2points.setText(String.valueOf(points[1]));
+        Utils.fetchSvg(mContext, logoUrls[1], holder.team2image);
+
+        holder.team3name.setText(teams[2]);
+        holder.team3points.setText(String.valueOf(points[2]));
+        Utils.fetchSvg(mContext, logoUrls[2], holder.team3image);
+
+        holder.team4name.setText(teams[3]);
+        holder.team4points.setText(String.valueOf(points[3]));
+        Utils.fetchSvg(mContext, logoUrls[3], holder.team4image);
+
+
+
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,7 +98,7 @@ public class GroupsRecyclerViewAdapter extends RecyclerView.Adapter<GroupsRecycl
 
         public ViewHolder(View itemView) {
             super(itemView);
-            group = itemView.findViewById(R.id.group_char);
+            group = itemView.findViewById(R.id.group_number); //groupchar
 
             team1name = itemView.findViewById(R.id.group_team_1_name);
             team1points = itemView.findViewById(R.id.group_team_1_points);

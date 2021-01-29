@@ -38,7 +38,7 @@ public class ResultsRecyclerViewAdapter extends RecyclerView.Adapter<ResultsRecy
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(mStages.get(position) == mStages.get(0)){
+                if(position == 0){
                     Intent intent = new Intent(mContext, ConcreteResultsActivity.class);
                     mContext.startActivity(intent);
                 }

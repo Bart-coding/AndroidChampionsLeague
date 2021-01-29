@@ -1,15 +1,15 @@
 
-Y	java:S110"=This class has 10 parents which is greater than 5 authorized.(ŽŠËÊ8Ž¢Ó…ô.
-g
-java:S2259<"EA "NullPointerException" could be thrown; "jsonObj" is nullable here.(×É¤Þþÿÿÿÿ8Ž¢Ó…ô.
 8
-java:S3626^"Remove this redundant jump.(ûÁÝ…8Ž¢Ó…ô.
-\
-java:S2259N"?A "NullPointerException" could be thrown; "s" is nullable here.(ØÞ™å8Ž¢Ó…ô.
+java:S3626_"Remove this redundant jump.(ûÁÝ…8Ž¢Ó…ô.
+b
+java:S2259B"EA "NullPointerException" could be thrown; "scorers" is nullable here.(§òÌõ8Ž¢Ó…ô.
 t
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ž¨Œþÿÿÿÿ8Ž¢Ó…ô.
-b
-java:S2259A"EA "NullPointerException" could be thrown; "scorers" is nullable here.(§òÌõ8Ž¢Ó…ô.
-X	java:S125E"<This block of commented-out lines of code should be removed.(™°ºù8Ž¢Ó…ô.
 Q
-java:S3740)"/Provide the parametrized type for this generic.(ÔÝ®Ýýÿÿÿÿ8Ž¢Ó…ô.
+java:S3740*"/Provide the parametrized type for this generic.(ÔÝ®Ýýÿÿÿÿ8Ž¢Ó…ô.
+X	java:S125F"<This block of commented-out lines of code should be removed.(™°ºù8Ž¢Ó…ô.
+\
+java:S2259O"?A "NullPointerException" could be thrown; "s" is nullable here.(ØÞ™å8Ž¢Ó…ô.
+^	java:S110"=This class has 11 parents which is greater than 5 authorized.(™Æ—€ÿÿÿÿÿ8Ž¢Ó…ô.
+g
+java:S2259="EA "NullPointerException" could be thrown; "jsonObj" is nullable here.(×É¤Þþÿÿÿÿ8Ž¢Ó…ô.

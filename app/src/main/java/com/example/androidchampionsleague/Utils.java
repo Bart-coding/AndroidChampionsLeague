@@ -3,7 +3,6 @@ package com.example.androidchampionsleague;
 import android.content.Context;
 import android.util.Log;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.pixplicity.sharp.Sharp;
 import java.io.IOException;
@@ -34,7 +33,7 @@ public class Utils {
             @Override
             public void onFailure(Call call, IOException e) {
                 // we are adding a default image if we gets any error.
-                target.setImageResource(R.drawable.groups_place_circle); //-> Obrazek domyslny
+                target.setImageResource(R.drawable.groups_place_promotion_circle); //-> Obrazek domyslny
             }
 
             @Override

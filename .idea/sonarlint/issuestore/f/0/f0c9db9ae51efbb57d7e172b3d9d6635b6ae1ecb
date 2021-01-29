@@ -1,17 +1,9 @@
 
-r	java:S116A"VRename this field "team_name_4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö½¡Î8ÉÈû›ô.
-r	java:S116?"VRename this field "team_name_2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûâ°Í8ÉÈû›ô.
+]	java:S125""<This block of commented-out lines of code should be removed.(ÖĞİßúÿÿÿÿ8÷Í£œô.
 “
-java:S1319"qThe type of the "groups" object should be an interface such as "List" rather than the implementation "ArrayList".(èøçöøÿÿÿÿ8†¹ßšô.
-]	java:S1251"<This block of commented-out lines of code should be removed.(Ñ§ôóüÿÿÿÿ8œŠ‘œô.
+java:S1319"qThe type of the "groups" object should be an interface such as "List" rather than the implementation "ArrayList".(èøçöøÿÿÿÿ8†¹ßšô.
+]	java:S125;"<This block of commented-out lines of code should be removed.(Ñ§ôóüÿÿÿÿ8œŠ‘œô.
 N
-java:S1068",Remove this unused "mContext" private field.(»úÅ¾øÿÿÿÿ8œŠ‘œô.
+java:S1068",Remove this unused "mContext" private field.(»úÅ¾øÿÿÿÿ8ş¶îËô.
 J
-java:S1604."(Make this anonymous inner class a lambda(Ì’ïĞüÿÿÿÿ8†¹ßšô.
-r	java:S116>"VRename this field "team_name_1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ãÒ8ÉÈû›ô.
-y	java:S116E"XRename this field "team_points_4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Äì–ùÿÿÿÿ8Ëı›ô.
-y	java:S116D"XRename this field "team_points_3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿îğ…ıÿÿÿÿ8Ëı›ô.
-t	java:S116C"XRename this field "team_points_2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÉã„8Ëı›ô.
-]	java:S125!"<This block of commented-out lines of code should be removed.(ÖĞİßúÿÿÿÿ8÷Í£œô.
-r	java:S116@"VRename this field "team_name_3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñËŠû8ÉÈû›ô.
-t	java:S116B"XRename this field "team_points_1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’­‘¤8ªóü›ô.
+java:S16048"(Make this anonymous inner class a lambda(Ì’ïĞüÿÿÿÿ8†¹ßšô.

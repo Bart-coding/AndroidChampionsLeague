@@ -1,8 +1,10 @@
 
-Q	java:S110"<This class has 9 parents which is greater than 5 authorized.(ğ‹Öà
-Q
-java:S3740"/Provide the parametrized type for this generic.(Ú¿ğšÿÿÿÿÿ8¨Áî§ô.
-Q
-java:S3740"/Provide the parametrized type for this generic.(Ú¿ğšÿÿÿÿÿ8¨Áî§ô.
+W	java:S110"=This class has 10 parents which is greater than 5 authorized.(¢ù§òÿÿÿÿÿ
+b
+java:S1128"ERemove this unused import 'androidx.appcompat.app.AppCompatActivity'.(€¶£î8¶üÊÈô.
 £
-java:S1186'"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ8¨Áî§ô.
+java:S1186("€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ8¨Áî§ô.
+Q
+java:S3740"/Provide the parametrized type for this generic.(Ú¿ğšÿÿÿÿÿ8¨Áî§ô.
+Q
+java:S3740"/Provide the parametrized type for this generic.(Ú¿ğšÿÿÿÿÿ8¨Áî§ô.

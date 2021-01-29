@@ -1,0 +1,43 @@
+
+j	java:S1008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ùµï8öà£Åô.
+M
+java:S1172 "+Remove this unused method parameter "view".(©«¼ûÿÿÿÿÿ8öà£Åô.
+o	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬íòşÿÿÿÿ8öà£Åô.
+M
+java:S1172,"+Remove this unused method parameter "view".(¬íòşÿÿÿÿ8öà£Åô.
+H
+java:S11724"+Remove this unused method parameter "view".(åÌ‘é8öà£Åô.
+H
+java:S1172@"+Remove this unused method parameter "view".(åƒæ¸8öà£Åô.
+o	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìöªØüÿÿÿÿ8öà£Åô.
+J
+java:S1604R"(Make this anonymous inner class a lambda(İÊÄÕüÿÿÿÿ8öà£Åô.
+o	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©«¼ûÿÿÿÿÿ8öà£Åô.
+Q
+java:S3740b"/Provide the parametrized type for this generic.(Ê¦Ìøÿÿÿÿ8öà£Åô.
+o	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÃ§òùÿÿÿÿ8öà£Åô.
+J
+java:S1185"(Remove this method to simply inherit it.(¨Œşÿÿÿÿ8å«ÖÅô.
+M
+java:S1172$"+Remove this unused method parameter "view".(Âø¹†şÿÿÿÿ8öà£Åô.
+H
+java:S1172("+Remove this unused method parameter "view".(§à§¯8öà£Åô.
+M
+java:S1172<"+Remove this unused method parameter "view".(ñÃ§òùÿÿÿÿ8öà£Åô.
+o	java:S100N"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö»÷æùÿÿÿÿ8öà£Åô.
+J
+java:S1604Y"(Make this anonymous inner class a lambda(”Í©ÿÿÿÿÿ8öà£Åô.
+o	java:S100b"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¦Ìøÿÿÿÿ8öà£Åô.
+j	java:S100@"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åƒæ¸8öà£Åô.
+j	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÌ‘é8öà£Åô.
+j	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï¹Ä¨8öà£Åô.
+E
+java:S1185"(Remove this method to simply inherit it.(Ù«µ§8ÌêÅô.
+H
+java:S11728"+Remove this unused method parameter "view".(¹ùµï8öà£Åô.
+j	java:S100D"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ÏÔ8öà£Åô.
+M
+java:S11720"+Remove this unused method parameter "view".(ìöªØüÿÿÿÿ8öà£Åô.
+o	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âø¹†şÿÿÿÿ8öà£Åô.
+j	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§à§¯8öà£Åô.
+^	java:S110"=This class has 10 parents which is greater than 5 authorized.(®µÖÜûÿÿÿÿ8ü«ÿÆô.

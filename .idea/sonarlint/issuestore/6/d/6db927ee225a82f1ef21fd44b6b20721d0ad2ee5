@@ -1,7 +1,5 @@
 
-{
-java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "holder".(–à¨Ç8Óğå…ô.
 
 java:S1319"rThe type of the "scorers" object should be an interface such as "List" rather than the implementation "ArrayList".(É…Ü8Óğå…ô.
 J
-java:S1604&"(Make this anonymous inner class a lambda(Ì’ïĞüÿÿÿÿ8Óğå…ô.
+java:S1604%"(Make this anonymous inner class a lambda(Ì’ïĞüÿÿÿÿ8°«œô.

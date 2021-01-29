@@ -1,8 +1,8 @@
 
 R
-java:S1144"5Remove this unused private "initRecyclerView" method.(šªŸÈ8àø¯œô.
-^
-java:S1854"<Remove this useless assignment to local variable "retrofit".(§–úþÿÿÿÿ8Š´œô.
-W	java:S110"=This class has 10 parents which is greater than 5 authorized.(ÄÀÏæþÿÿÿÿ
+java:S1144"5Remove this unused private "initRecyclerView" method.(šªŸÈ8àø¯œô.
 O
-java:S1481"-Remove this unused "retrofit" local variable.(§–úþÿÿÿÿ8Š´œô.
+java:S1481"-Remove this unused "retrofit" local variable.(§–úþÿÿÿÿ8Š´œô.
+^
+java:S1854"<Remove this useless assignment to local variable "retrofit".(§–úþÿÿÿÿ8Š´œô.
+Y	java:S110"=This class has 11 parents which is greater than 5 authorized.(¹¶×³8½ÇÉÈô.

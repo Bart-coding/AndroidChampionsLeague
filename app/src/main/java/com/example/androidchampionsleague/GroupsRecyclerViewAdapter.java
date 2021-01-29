@@ -1,7 +1,6 @@
 package com.example.androidchampionsleague;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,8 +42,7 @@ public class GroupsRecyclerViewAdapter extends RecyclerView.Adapter<GroupsRecycl
         holder.team1name.setText(teams[0]);
         holder.team1points.setText(String.valueOf(points[0]));
 
-        Utils.fetchSvg(mContext, logoUrls[0], holder.team1image); //Mam nadzieje ze zadziala :)
-        //Toast.makeText(mContext, logoUrls[0], Toast.LENGTH_SHORT).show();
+        Utils.fetchSvg(mContext, logoUrls[0], holder.team1image);
 
         holder.team2name.setText(teams[1]);
         holder.team2points.setText(String.valueOf(points[1]));
@@ -57,9 +55,6 @@ public class GroupsRecyclerViewAdapter extends RecyclerView.Adapter<GroupsRecycl
         holder.team4name.setText(teams[3]);
         holder.team4points.setText(String.valueOf(points[3]));
         Utils.fetchSvg(mContext, logoUrls[3], holder.team4image);
-
-
-
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override

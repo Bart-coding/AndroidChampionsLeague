@@ -1,4 +1,4 @@
 
-Y	java:S110"=This class has 10 parents which is greater than 5 authorized.(©•ÅÔ8³ÈÒôó.
-
-java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ĞŠß±8Ññ¡ôó.
+H
+java:S1068	",Remove this unused "textView" private field.(ìÊõ"8ÁÃô.
+^	java:S110"=This class has 11 parents which is greater than 5 authorized.(€¿áÊşÿÿÿÿ8·¿Æô.

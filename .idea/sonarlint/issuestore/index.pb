@@ -1,6 +1,4 @@
 
-v
-Fapp/src/main/java/com/example/androidchampionsleague/RootActivity.java,d\c\dcda54eaf170c068d896eb03a8e57e8509bd6dae
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 P
@@ -19,3 +17,19 @@ p
 Tapp/src/main/java/com/example/androidchampionsleague/ScorersRecyclerViewAdapter.java,6\d\6db927ee225a82f1ef21fd44b6b20721d0ad2ee5
 y
 Iapp/src/main/java/com/example/androidchampionsleague/ScorersActivity.java,1\7\171132eea14bab64d263295a5167828cb3b3d370
+|
+Lapp/src/main/java/com/example/androidchampionsleague/NavigationActivity.java,0\8\0847285b690ab75c8abd8e79e060b3ea32637fb9
+w
+Gapp/src/main/java/com/example/androidchampionsleague/SensorManager.java,0\c\0c686edafd3969aa078dd8e497c94d799e4f3ce6
+}
+Mapp/src/main/java/com/example/androidchampionsleague/SensorValueInstance.java,2\7\27eb1cf09b9a04f0634d74ac2df71b4427f16d61
+z
+Japp/src/main/java/com/example/androidchampionsleague/SettingsActivity.java,e\0\e02bf1881257f67235bc0b777a865ca244c8a673
+y
+Iapp/src/main/java/com/example/androidchampionsleague/ResultsActivity.java,1\2\12f9e90b047c5705c8bb57f8cf2054aa2710cf6c
+x
+Happ/src/main/java/com/example/androidchampionsleague/GroupsActivity.java,9\d\9dcb9a6a5b6b3718dc11ae2c0bee811b5f6c64f5
+Å
+Qapp/src/main/java/com/example/androidchampionsleague/ConcreteResultsActivity.java,3\6\3684b9d2fde9575b7a57a34bb93864b49a29ccae
+É
+Sapp/src/main/java/com/example/androidchampionsleague/GroupsRecyclerViewAdapter.java,f\0\f0c9db9ae51efbb57d7e172b3d9d6635b6ae1ecb

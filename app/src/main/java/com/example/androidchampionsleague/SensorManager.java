@@ -78,7 +78,7 @@ public class SensorManager extends AppCompatActivity {
         TypedValue outValue = new TypedValue();
         getTheme().resolveAttribute(R.attr.themeName, outValue, true);
 
-        if(SensorValueInstance.getCurrentSensorValue() >= maxValue / 2 ) {
+        if(SensorValueInstance.getCurrentSensorValue() >= maxValue / 3 ) {
             // zmiana tylko wtedy, gdy poprzedni to ciemny motyw
             if("dark".equals(outValue.string)){
                 return 1;

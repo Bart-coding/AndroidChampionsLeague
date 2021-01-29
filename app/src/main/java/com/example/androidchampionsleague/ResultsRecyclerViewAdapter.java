@@ -2,7 +2,6 @@ package com.example.androidchampionsleague;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,7 +38,7 @@ public class ResultsRecyclerViewAdapter extends RecyclerView.Adapter<ResultsRecy
             @Override
             public void onClick(View view) {
                 if(position == 0){
-                    Intent intent = new Intent(mContext, ConcreteResultsActivity.class);
+                    Intent intent = new Intent(mContext, GroupMatchResultActivity.class);
                     mContext.startActivity(intent);
                 }
                 else{

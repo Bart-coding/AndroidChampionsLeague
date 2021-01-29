@@ -1,7 +1,5 @@
 package com.example.androidchampionsleague;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -9,7 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class ConcreteResultsActivity extends SensorManager implements AdapterView.OnItemSelectedListener{
+public class GroupMatchResultActivity extends SensorManager implements AdapterView.OnItemSelectedListener{
 
     String[] matchDays= {"Matchday 1", "Matchday 2", "Matchday 3", "Matchday 4", "Matchday 5", "Matchday 6" };
 
@@ -17,7 +15,7 @@ public class ConcreteResultsActivity extends SensorManager implements AdapterVie
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TryChangeTheme();
-        setContentView(R.layout.activity_concrete_results);
+        setContentView(R.layout.activity_group_match_result);
 
         // Linking the Views to Java’s instances
         Spinner spin1=(Spinner) findViewById(R.id.results_spinner);

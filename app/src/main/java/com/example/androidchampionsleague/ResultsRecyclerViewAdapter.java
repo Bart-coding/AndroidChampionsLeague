@@ -15,10 +15,10 @@ import java.util.ArrayList;
 
 public class ResultsRecyclerViewAdapter extends RecyclerView.Adapter<ResultsRecyclerViewAdapter.ViewHolder>{
 
-    private ArrayList<String> mStages;
+    private ArrayList<Stage> mStages;
     private Context mContext;
 
-    public ResultsRecyclerViewAdapter(Context context, ArrayList<String> stages ) {
+    public ResultsRecyclerViewAdapter(Context context, ArrayList<Stage> stages ) {
         mStages = stages;
         mContext = context;
     }
@@ -32,18 +32,20 @@ public class ResultsRecyclerViewAdapter extends RecyclerView.Adapter<ResultsRecy
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
-        holder.stageName.setText(mStages.get(position));
+        holder.stageName.setText(mStages.get(position).getName());
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent;
                 if(position == 0){
-                    Intent intent = new Intent(mContext, GroupMatchResultActivity.class);
-                    mContext.startActivity(intent);
+                    intent = new Intent(mContext, GroupMatchResultActivity.class);
                 }
                 else{
-                    Toast.makeText(mContext, mStages.get(position), Toast.LENGTH_SHORT).show();
+                    intent = new Intent(mContext, KnockoutMatchResultActivity.class);
                 }
+                intent.putExtra("stage",mStages.get(position).getHeader());
+                mContext.startActivity(intent);
             }
         });
     }

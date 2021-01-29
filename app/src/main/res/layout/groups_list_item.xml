@@ -24,7 +24,7 @@
             android:text="A"
             android:textSize="17sp"
             android:textColor="@color/background_light"
-            android:background="@drawable/scorers_rounded_textview"
+            android:background="@drawable/scorers_circle"
             android:layout_toRightOf="@+id/group_char"
             android:gravity="center"
             android:layout_marginLeft="20dp"

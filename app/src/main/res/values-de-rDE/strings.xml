@@ -26,4 +26,5 @@
     <string name="choose_matchday">Wähle den Spieltag</string>
     <string name="scorer">Torschütze</string>
     <string name="goals">Tore</string>
+    <string name="round_of_16_stage">Achtelfinale</string>
 </resources>

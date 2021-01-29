@@ -33,6 +33,7 @@ public class ResultsActivity extends NavigationActivity {
 
     private void initStagesList(){
         stagesList.add(getString(R.string.group_stage));
+        stagesList.add(getString(R.string.round_of_16_stage));
         stagesList.add(getString(R.string.quarterfinal_stage));
         stagesList.add(getString(R.string.semifinal_stage));
         stagesList.add(getString(R.string.final_stage));

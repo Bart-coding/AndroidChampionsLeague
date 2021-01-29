@@ -31,12 +31,12 @@ public class MatchResultRecyclerViewAdapter extends RecyclerView.Adapter<MatchRe
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
-//        holder.TeamImage1.setImageBitmap(mMatches.get(position).getImage1());
-//        holder.TeamImage2.setImageBitmap(mMatches.get(position).getImage2());
-//        holder.TeamName1.setText(mMatches.get(position).getName1());
-//        holder.TeamName2.setText(mMatches.get(position).getName2());
-//        holder.TeamScore1.setText(mMatches.get(position).getScore1());
-//        holder.TeamScore1.setText(mMatches.get(position).getScore2());
+//        holder.Team1Image.setImageBitmap(mMatches.get(position).getImage1());
+//        holder.Team2Image.setImageBitmap(mMatches.get(position).getImage2());
+//        holder.Team1Name.setText(mMatches.get(position).getName1());
+//        holder.Team2Name.setText(mMatches.get(position).getName2());
+//        holder.Team1Score.setText(mMatches.get(position).getScore1());
+//        holder.Team2Score.setText(mMatches.get(position).getScore2());
 
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
@@ -54,22 +54,29 @@ public class MatchResultRecyclerViewAdapter extends RecyclerView.Adapter<MatchRe
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        ImageView TeamImage1;
-        ImageView TeamImage2;
-        TextView TeamName1;
-        TextView TeamName2;
-        TextView TeamScore1;
-        TextView TeamScore2;
+        ImageView Team1Image;
+        ImageView Team2Image;
+
+        TextView Team1Name;
+        TextView Team2Name;
+
+        TextView Team1Score;
+        TextView Team2Score;
+
         RelativeLayout parentLayout;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            TeamImage1 = itemView.findViewById(R.id.image_team_1);
-            TeamImage2 = itemView.findViewById(R.id.image_team_2);
-            TeamName1 = itemView.findViewById(R.id.team_match_name_1);
-            TeamName2 = itemView.findViewById(R.id.team_match_name_2);
-            TeamScore1 = itemView.findViewById(R.id.team_score_1);
-            TeamScore2 = itemView.findViewById(R.id.team_score_2);
+
+            Team1Image = itemView.findViewById(R.id.match_team_1_image);
+            Team2Image = itemView.findViewById(R.id.match_team_2_image);
+
+            Team1Name = itemView.findViewById(R.id.match_team_1_name);
+            Team2Name = itemView.findViewById(R.id.match_team_2_name);
+
+            Team1Score = itemView.findViewById(R.id.match_team_1_score);
+            Team2Score = itemView.findViewById(R.id.match_team_2_score);
+
             parentLayout = itemView.findViewById(R.id.parent_layout_match_result);
         }
     }

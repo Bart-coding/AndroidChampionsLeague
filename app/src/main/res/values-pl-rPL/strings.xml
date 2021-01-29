@@ -26,4 +26,5 @@
     <string name="choose_matchday">Wybierz kolejkę</string>
     <string name="scorer">Strzelec</string>
     <string name="goals">Gole</string>
+    <string name="round_of_16_stage">1/8 Finału</string>
 </resources>

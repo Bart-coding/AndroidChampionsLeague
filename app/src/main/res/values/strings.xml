@@ -25,4 +25,5 @@
     <string name="choose_matchday">Choose Matchday</string>
     <string name="scorer">Scorer</string>
     <string name="goals">Goals</string>
+    <string name="round_of_16_stage">Round of 16</string>
 </resources>

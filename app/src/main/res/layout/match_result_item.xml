@@ -2,69 +2,71 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="15dp"
+    android:padding="10dp"
     android:id="@+id/parent_layout_match_result"
     android:background="?attr/colorOnPrimary">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/scorers_circle"
-        android:id="@+id/image_team_1"/>
+        android:id="@+id/match_team_1_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/scorers_circle" />
     <TextView
+        android:id="@+id/match_team_1_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Team Name 1"
-        android:id="@+id/team_match_name_1"
-        android:layout_toRightOf="@+id/image_team_1"
-        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/match_team_1_image"
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
+        android:text="Team Name 1"
+        android:textColor="@color/black"
         android:textSize="15sp"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
         <TextView
+            android:id="@+id/match_team_1_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"
             android:layout_centerInParent="true"
-            android:id="@+id/team_score_1"
+            android:text="1"
             android:textColor="@color/black"
             android:textSize="18sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=":"
-            android:textColor="@color/black"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
+            android:text=":"
+            android:textColor="@color/black"
             android:textSize="18sp"/>
         <TextView
+            android:id="@+id/team_score_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2"
             android:layout_centerInParent="true"
-            android:id="@+id/team_score_2"
+            android:layout_toRightOf="@+id/match_team_2_score"
+            android:text="2"
             android:textColor="@color/black"
-            android:layout_toRightOf="@+id/team_score_1"
             android:textSize="18sp"/>
     </LinearLayout>
     <TextView
+        android:id="@+id/match_team_2_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Team Name 1"
-        android:id="@+id/team_match_name_2"
-        android:layout_toLeftOf="@+id/image_team_2"
-        android:textColor="@color/black"
+        android:layout_toLeftOf="@+id/match_team_2_image"
         android:layout_centerVertical="true"
         android:layout_marginRight="10dp"
+        android:text="Team Name 1"
+        android:textColor="@color/black"
         android:textSize="15sp"/>
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/scorers_circle"
+        android:id="@+id/match_team_2_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
-        android:id="@+id/image_team_2"/>
+        android:src="@drawable/scorers_circle"/>
 </RelativeLayout>

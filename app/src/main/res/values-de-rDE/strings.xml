@@ -24,4 +24,6 @@
     <string name="semifinal_stage">Halbfinale</string>
     <string name="final_stage">Finale</string>
     <string name="choose_matchday">Wähle den Spieltag</string>
+    <string name="scorer">Torschütze</string>
+    <string name="goals">Tore</string>
 </resources>

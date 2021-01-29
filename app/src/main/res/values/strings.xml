@@ -23,4 +23,6 @@
     <string name="semifinal_stage">Semifinal</string>
     <string name="final_stage">Final</string>
     <string name="choose_matchday">Choose Matchday</string>
+    <string name="scorer">Scorer</string>
+    <string name="goals">Goals</string>
 </resources>

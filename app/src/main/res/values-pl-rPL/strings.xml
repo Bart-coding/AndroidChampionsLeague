@@ -24,4 +24,6 @@
     <string name="semifinal_stage">Półfinał</string>
     <string name="final_stage">Finał</string>
     <string name="choose_matchday">Wybierz kolejkę</string>
+    <string name="scorer">Strzelec</string>
+    <string name="goals">Gole</string>
 </resources>

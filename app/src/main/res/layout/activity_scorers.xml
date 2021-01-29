@@ -14,6 +14,29 @@
         android:background="?attr/colorOnPrimary">
         <include
             layout="@layout/main_toolbar"/>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/parent_layout_scorers"
+            android:background="?attr/colorOnPrimary">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scorer"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goals"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="17sp"/>
+        </RelativeLayout>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -31,4 +31,5 @@
     <string name="change_button">Zmień</string>
     <string name="choose_team">Wybierz zespół, któremu chcesz kibicować</string>
     <string name="choose">Wybierz</string>
+    <string name="go_to_preferences">Przejdź do preferencji i tam wybierz zespół, któremu chcesz kibicować</string>
 </resources>

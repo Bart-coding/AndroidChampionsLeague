@@ -31,4 +31,5 @@
     <string name="change_button">Veränderung</string>
     <string name="choose_team">Wählen Sie das Team, das Sie unterstützen möchten</string>
     <string name="choose">Wählen</string>
+    <string name="go_to_preferences">Gehen Sie zu Einstellungen und dort wählen Sie das Team, das Sie unterstützen möchten</string>
 </resources>

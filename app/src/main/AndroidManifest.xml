@@ -19,7 +19,7 @@
         <activity android:name=".NavigationActivity" />
         <activity android:name=".ScorersActivity" />
         <activity android:name=".PreferencesActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

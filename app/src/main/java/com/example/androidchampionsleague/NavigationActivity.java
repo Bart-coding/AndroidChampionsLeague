@@ -38,7 +38,7 @@ public class NavigationActivity extends com.example.androidchampionsleague.Senso
     }
 
     public void ClickHome(View view){
-        RedirectActivity(this, MainActivity.class);
+        RedirectActivity(this, HomeActivity.class);
     }
 
     public void ClickResults(View view) {

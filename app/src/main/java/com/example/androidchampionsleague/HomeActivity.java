@@ -8,30 +8,23 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
+public class HomeActivity extends NavigationActivity {
 
-public class PreferencesActivity extends NavigationActivity {
-
+    private TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TryChangeTheme();
-        setContentView(R.layout.activity_preferences);
-
+        setContentView(R.layout.activity_home);
+        
         drawerLayout = findViewById(R.id.drawer_layout);
 
         setPreferences();
     }
 
     @Override
-    public void ClickSettings(View view) {
+    public void ClickHome(View view){
         recreate();
-    }
-
-    public void onClick(View view){
-        DialogChangePreferences dialog = new DialogChangePreferences();
-        dialog.show(getFragmentManager(),"dialog");
     }
 
     private void setPreferences(){
@@ -39,18 +32,16 @@ public class PreferencesActivity extends NavigationActivity {
         String teamName = sharedPref.getString("team_name","none");
         String teamImageURL = sharedPref.getString("team_image","none");
 
-        TextView textView = findViewById(R.id.preferences_team_name);
-        ImageView imageView = findViewById(R.id.preferences_team_image);
+        TextView textViewTeam = findViewById(R.id.home_team_name);
+        ImageView imageView = findViewById(R.id.home_team_image);
         if(teamName != "none" && teamImageURL != "none") {
-            textView.setText(teamName);
+            textViewTeam.setText(teamName);
             Utils.fetchSvg(this, teamImageURL, imageView);
         }
         else{
-            TextView header = findViewById(R.id.preferences_header);
-            header.setText("");
-            textView.setText(R.string.choose_team);
-            Button button = findViewById(R.id.preferences_button);
-            button.setText(R.string.choose);
+            textViewTeam.setText("");
+            TextView header = findViewById(R.id.home_header);
+            header.setText(R.string.go_to_preferences);
             imageView.setImageBitmap(null);
         }
     }

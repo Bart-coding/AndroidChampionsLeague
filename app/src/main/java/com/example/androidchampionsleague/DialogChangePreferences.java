@@ -2,6 +2,7 @@ package com.example.androidchampionsleague;
 
 import android.app.DialogFragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +10,18 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.gson.Gson;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
 
 public class DialogChangePreferences extends DialogFragment {
 
@@ -19,8 +31,74 @@ public class DialogChangePreferences extends DialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.dialog_preferences,container,false);
 
+        Retrofit retrofit = RetrofitInstance.getRetrofitInstance();
+        TeamsListService teamsListService = retrofit.create(TeamsListService.class);
+        Call<Object> call = teamsListService.getTeams();
+
+        call.enqueue(new Callback() {
+            @Override
+            public void onResponse(Call call, Response response) {
+                if (!response.isSuccessful()) {
+                    return;
+                }
+                Log.e("TAG", "response: "+new Gson().toJson(response.body()) );
+
+                String obj = new Gson().toJson((response.body()));
+
+                if (obj!=null) {
+                    JSONObject jsonObj = null;
+                    try {
+                        jsonObj = new JSONObject(obj);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    JSONArray teamsJSON = null;
+                    try {
+                        teamsJSON = jsonObj.getJSONArray("teams");
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                    for (int i = 0; i<teamsJSON.length(); i++) {
+                        JSONObject teamJSON = null;
+                        try {
+                            teamJSON = teamsJSON.getJSONObject(i);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                        Team team = new Team();
+                        try {
+                            team.setId(teamJSON.getInt("id"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        try {
+                            team.setName(teamJSON.getString("name"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        try {
+                            team.setLogoUrl(teamJSON.getString("crestUrl"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                        teams.add(team);
+
+                    }
+
+                    initRecyclerView(view);
+                }
+            }
+
+            @Override
+            public void onFailure(Call call, Throwable t) {
+                return;
+            }
+        });
         // tymczasowo dla testów
-        Team t1 = new Team();
+        /*Team t1 = new Team();
         t1.setName("Borussia Dortmund");
         t1.setLogoUrl("https://crests.football-data.org/4.svg");
         Team t2 = new Team();
@@ -31,14 +109,18 @@ public class DialogChangePreferences extends DialogFragment {
         t3.setLogoUrl("https://crests.football-data.org/61.svg");
         teams.add(t1);
         teams.add(t2);
-        teams.add(t3);
+        teams.add(t3);*/
 
+
+
+        return view;
+    }
+
+    public void initRecyclerView(View view) {
         // init RecyclerView
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view_dialog_preferences);
         PreferencesRecyclerViewAdapter adapter = new PreferencesRecyclerViewAdapter(getActivity(),this, teams);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
-        return view;
     }
 }

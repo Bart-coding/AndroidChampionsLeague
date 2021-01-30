@@ -17,6 +17,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -85,6 +86,7 @@ public class DialogChangePreferences extends DialogFragment {
                         }
                         teams.add(team);
                     }
+                    Collections.sort(teams, new SortTeamsByName());
                     initRecyclerView(view);
                 }
             }

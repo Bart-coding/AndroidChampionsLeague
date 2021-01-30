@@ -54,7 +54,7 @@ public class NavigationActivity extends com.example.androidchampionsleague.Senso
     }
 
     public void ClickSettings(View view) {
-        RedirectActivity(this, SettingsActivity.class);
+        RedirectActivity(this, PreferencesActivity.class);
     }
 
     public void ClickAboutUs(View view) {

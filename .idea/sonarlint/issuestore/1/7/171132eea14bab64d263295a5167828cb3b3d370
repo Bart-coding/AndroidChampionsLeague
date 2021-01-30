@@ -1,15 +1,15 @@
 
-8
-java:S3626_"Remove this redundant jump.(ûÁİ…8¢Ó…ô.
-b
-java:S2259B"EA "NullPointerException" could be thrown; "scorers" is nullable here.(§òÌõ8¢Ó…ô.
 t
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¨Œşÿÿÿÿ8¢Ó…ô.
 Q
 java:S3740*"/Provide the parametrized type for this generic.(Ôİ®İıÿÿÿÿ8¢Ó…ô.
-X	java:S125F"<This block of commented-out lines of code should be removed.(™°ºù8¢Ó…ô.
+8
+java:S3626_"Remove this redundant jump.(ûÁİ…8¢Ó…ô.
 \
 java:S2259O"?A "NullPointerException" could be thrown; "s" is nullable here.(ØŞ™å8¢Ó…ô.
+b
+java:S2259B"EA "NullPointerException" could be thrown; "scorers" is nullable here.(§òÌõ8¢Ó…ô.
 ^	java:S110"=This class has 11 parents which is greater than 5 authorized.(™Æ—€ÿÿÿÿÿ8¢Ó…ô.
 g
 java:S2259="EA "NullPointerException" could be thrown; "jsonObj" is nullable here.(×É¤Şşÿÿÿÿ8¢Ó…ô.
+X	java:S125F"<This block of commented-out lines of code should be removed.(™°ºù8¢Ó…ô.

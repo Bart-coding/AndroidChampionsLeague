@@ -7,7 +7,7 @@
     <string name="groups">Gruppen</string>
     <string name="group">Gruppe</string>
     <string name="scorers">Torschützen</string>
-    <string name="settings">Einstellungen</string>
+    <string name="preferences">Vorlieben</string>
     <string name="about">Über uns</string>
     <string name="authors">Autoren</string>
     <string name="exit">Ausfahrt</string>
@@ -27,4 +27,8 @@
     <string name="scorer">Torschütze</string>
     <string name="goals">Tore</string>
     <string name="round_of_16_stage">Achtelfinale</string>
+    <string name="support">Du Jubelst</string>
+    <string name="change_button">Veränderung</string>
+    <string name="choose_team">Wählen Sie das Team, das Sie unterstützen möchten</string>
+    <string name="choose">Wählen</string>
 </resources>

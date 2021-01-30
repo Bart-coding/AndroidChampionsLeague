@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".PreferencesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="?attr/colorOnPrimary">
+        <include
+            layout="@layout/main_toolbar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/support"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="30sp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/preferences_team_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team Name"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="30sp"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/preferences_team_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/scorers_circle"/>
+            <Button
+                android:id="@+id/preferences_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius_button"
+                android:text="@string/change_button"
+                android:textColor="@color/white"
+                android:onClick="onClick"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+        <include
+            layout="@layout/main_nav_drawer"/>
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

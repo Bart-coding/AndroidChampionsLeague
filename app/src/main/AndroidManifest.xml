@@ -18,7 +18,7 @@
         <activity android:name=".ResultsActivity" />
         <activity android:name=".NavigationActivity" />
         <activity android:name=".ScorersActivity" />
-        <activity android:name=".SettingsActivity" />
+        <activity android:name=".PreferencesActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

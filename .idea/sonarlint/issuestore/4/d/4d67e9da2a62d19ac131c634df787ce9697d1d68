@@ -1,15 +1,15 @@
 
-J
-java:S1604*"(Make this anonymous inner class a lambda(Ì’ïĞüÿÿÿÿ8ö®ä£ô.
-p	java:S116<"TRename this field "TeamName2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì¸ ‹8‰şñ£ô.
+]	java:S125""<This block of commented-out lines of code should be removed.(ƒŠ”Êüÿÿÿÿ8™ƒ¤ô.
+q	java:S116?"URename this field "Team1Score" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éí··8ÕËÍ÷ô.
 ”
 java:S1319"rThe type of the "matches" object should be an interface such as "List" rather than the implementation "ArrayList".(Æÿ…°úÿÿÿÿ8ö®ä£ô.
-]	java:S125""<This block of commented-out lines of code should be removed.(—¦±¹üÿÿÿÿ8™ƒ¤ô.
-v	java:S116>"URename this field "TeamScore2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¾¤Šøÿÿÿÿ8ìîõ£ô.
-o	java:S116;"TRename this field "TeamName1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷‘m8áŞñ£ô.
-q	java:S116="URename this field "TeamScore1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñúæ8æÊõ£ô.
-q	java:S116:"URename this field "TeamImage2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”Öö8äåö£ô.
-v	java:S1169"URename this field "TeamImage1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’·şäûÿÿÿÿ8×Æö£ô.
+v	java:S1169"URename this field "Team1Image" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Ä£ıÿÿÿÿ8ùƒË÷ô.
 X	java:S125-"<This block of commented-out lines of code should be removed.(ÜóÂŠ8šîŒ¤ô.
+o	java:S116="TRename this field "Team2Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß¾›c8Ğ”Í÷ô.
+q	java:S116:"URename this field "Team2Image" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·€â8‰íË÷ô.
+u	java:S116<"TRename this field "Team1Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÇ¢ıûÿÿÿÿ8íİÌ÷ô.
+J
+java:S1604*"(Make this anonymous inner class a lambda(Ì’ïĞüÿÿÿÿ8ö®ä£ô.
 N
 java:S1068",Remove this unused "mContext" private field.(»úÅ¾øÿÿÿÿ8šîŒ¤ô.
+q	java:S116@"URename this field "Team2Score" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹åÆ¥8€ŠÎ÷ô.

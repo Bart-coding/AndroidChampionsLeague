@@ -1,9 +1,6 @@
 
-]	java:S125""<This block of commented-out lines of code should be removed.(ÖĞİßúÿÿÿÿ8÷Í£œô.
-“
-java:S1319"qThe type of the "groups" object should be an interface such as "List" rather than the implementation "ArrayList".(èøçöøÿÿÿÿ8†¹ßšô.
-]	java:S125;"<This block of commented-out lines of code should be removed.(Ñ§ôóüÿÿÿÿ8œŠ‘œô.
-N
-java:S1068",Remove this unused "mContext" private field.(»úÅ¾øÿÿÿÿ8ş¶îËô.
+]	java:S125>"<This block of commented-out lines of code should be removed.(Ñ§ôóüÿÿÿÿ8ïš·óô.
 J
-java:S16048"(Make this anonymous inner class a lambda(Ì’ïĞüÿÿÿÿ8†¹ßšô.
+java:S1604;"(Make this anonymous inner class a lambda(Ì’ïĞüÿÿÿÿ8ïš·óô.
+“
+java:S1319"qThe type of the "groups" object should be an interface such as "List" rather than the implementation "ArrayList".(‘ÓçÓúÿÿÿÿ8¡Àüòô.

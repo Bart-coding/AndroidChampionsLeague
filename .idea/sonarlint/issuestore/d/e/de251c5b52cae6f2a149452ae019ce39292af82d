@@ -1,0 +1,9 @@
+
+I
+java:S1128"4Remove this unused import 'android.graphics.Bitmap'.(¾ì
+g	java:S116"MRename this field "Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬µä›şÿÿÿÿ
+i	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¬­Áøÿÿÿÿ
+k	java:S116"QRename this field "Points" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šŸšúúÿÿÿÿ
+l	java:S116	"RRename this field "LogoUrl" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å‚ÂÓùÿÿÿÿ
+m	java:S116
+"SRename this field "Position" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÅş“ùÿÿÿÿ

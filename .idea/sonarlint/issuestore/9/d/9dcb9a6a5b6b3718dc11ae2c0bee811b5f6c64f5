@@ -1,8 +1,29 @@
 
-R
-java:S1144"5Remove this unused private "initRecyclerView" method.(šªŸÈ8àø¯œô.
-O
-java:S1481"-Remove this unused "retrofit" local variable.(§–úşÿÿÿÿ8Š´œô.
-^
-java:S1854"<Remove this useless assignment to local variable "retrofit".(§–úşÿÿÿÿ8Š´œô.
-Y	java:S110"=This class has 11 parents which is greater than 5 authorized.(¹¶×³8½ÇÉÈô.
+k
+java:S2259z"IA "NullPointerException" could be thrown; "tableObject" is nullable here.(ªÜÄ¥ÿÿÿÿÿ8ƒ»¦óô.
+i
+java:S2259]"LA "NullPointerException" could be thrown; "standingObject" is nullable here.(Ÿğ˜Ô8ƒ»¦óô.
+Y	java:S110"=This class has 11 parents which is greater than 5 authorized.(¹¶×³8½ÇÉÈô.
+i
+java:S2259M"GA "NullPointerException" could be thrown; "standings" is nullable here.(»áŞÒøÿÿÿÿ8ƒ»¦óô.
+U
+java:S1128"8Remove this unused import 'com.google.gson.JsonElement'.(ğ†˜³8ƒ»¦óô.
+g
+java:S2259G"EA "NullPointerException" could be thrown; "jsonObj" is nullable here.(«Ü¸©øÿÿÿÿ8ƒ»¦óô.
+9
+java:S3626«"Remove this redundant jump.(ûÁİ…8ƒ»¦óô.
+l
+java:S2259"IA "NullPointerException" could be thrown; "teamJObject" is nullable here.(Ù¹ÏÔüÿÿÿÿ8ƒ»¦óô.
+Z
+java:S1197"8Move the array designator from the variable to the type.(–ÉÍúÿÿÿÿ8ƒ»¦óô.
+]	java:S125"<This block of commented-out lines of code should be removed.(ÛúŒøùÿÿÿÿ8ƒ»¦óô.
+X	java:S125Q"<This block of commented-out lines of code should be removed.(™°ºù8ƒ»¦óô.
+`
+java:S2259m"CA "NullPointerException" could be thrown; "table" is nullable here.(ıïÛæ8ƒ»¦óô.
+P
+java:S1481X".Remove this unused "groupName" local variable.(©€åÂúÿÿÿÿ8ƒ»¦óô.
+Q
+java:S37404"/Provide the parametrized type for this generic.(Ôİ®İıÿÿÿÿ8ƒ»¦óô.
+]	java:S125'"<This block of commented-out lines of code should be removed.(¾ÒœĞûÿÿÿÿ8ƒ»¦óô.
+t
+java:S3776!"RRefactor this method to reduce its Cognitive Complexity from 64 to the 15 allowed.(¨Œşÿÿÿÿ8ƒ»¦óô.

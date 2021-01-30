@@ -7,7 +7,7 @@
     <string name="groups">Grupy</string>
     <string name="group">Grupa</string>
     <string name="scorers">Strzelcy</string>
-    <string name="settings">Ustawienia</string>
+    <string name="preferences">Preferencje</string>
     <string name="about">O nas</string>
     <string name="authors">Autorzy</string>
     <string name="exit">Wyjście</string>
@@ -27,4 +27,8 @@
     <string name="scorer">Strzelec</string>
     <string name="goals">Gole</string>
     <string name="round_of_16_stage">1/8 Finału</string>
+    <string name="support">Kibicujesz</string>
+    <string name="change_button">Zmień</string>
+    <string name="choose_team">Wybierz zespół, któremu chcesz kibicować</string>
+    <string name="choose">Wybierz</string>
 </resources>

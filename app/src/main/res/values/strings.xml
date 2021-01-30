@@ -30,5 +30,6 @@
     <string name="change_button">Change</string>
     <string name="choose_team">Choose team you want to support</string>
     <string name="choose">Choose</string>
+    <string name="go_to_preferences">Go to Preferences and there choose team you want to support</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

@@ -11,10 +11,10 @@
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/dialog_team_1_image"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="5dp"
             android:src="@drawable/scorers_circle" />
         <TextView
             android:id="@+id/dialog_team_1_name"
@@ -25,6 +25,6 @@
             android:layout_marginLeft="20dp"
             android:text="Team Name 1"
             android:textColor="@color/black"
-            android:textSize="15sp"/>
+            android:textSize="20sp"/>
     </RelativeLayout>
 </RelativeLayout>

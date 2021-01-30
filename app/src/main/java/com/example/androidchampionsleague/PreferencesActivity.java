@@ -8,9 +8,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
-
 public class PreferencesActivity extends NavigationActivity {
 
     @Override

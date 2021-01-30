@@ -83,11 +83,8 @@ public class DialogChangePreferences extends DialogFragment {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-
                         teams.add(team);
-
                     }
-
                     initRecyclerView(view);
                 }
             }
@@ -97,27 +94,10 @@ public class DialogChangePreferences extends DialogFragment {
                 return;
             }
         });
-        // tymczasowo dla testów
-        /*Team t1 = new Team();
-        t1.setName("Borussia Dortmund");
-        t1.setLogoUrl("https://crests.football-data.org/4.svg");
-        Team t2 = new Team();
-        t2.setName("FC Bayern München");
-        t2.setLogoUrl("https://crests.football-data.org/5.svg");
-        Team t3 = new Team();
-        t3.setName("Chelsea FC");
-        t3.setLogoUrl("https://crests.football-data.org/61.svg");
-        teams.add(t1);
-        teams.add(t2);
-        teams.add(t3);*/
-
-
-
         return view;
     }
 
     public void initRecyclerView(View view) {
-        // init RecyclerView
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view_dialog_preferences);
         PreferencesRecyclerViewAdapter adapter = new PreferencesRecyclerViewAdapter(getActivity(),this, teams);
         recyclerView.setAdapter(adapter);

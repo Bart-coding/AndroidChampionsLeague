@@ -51,13 +51,15 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
                 android:text="@string/points"
                 android:textSize="15sp"
                 android:textColor="@color/black" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="2dp">
             <TextView
                 android:id="@+id/place_number_1"
                 android:layout_width="wrap_content"
@@ -97,7 +99,8 @@
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="2dp">
             <TextView
                 android:id="@+id/place_number_2"
                 android:layout_width="wrap_content"
@@ -137,7 +140,8 @@
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="2dp">
             <TextView
                 android:id="@+id/place_number_3"
                 android:layout_width="wrap_content"
@@ -177,7 +181,8 @@
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="2dp">
             <TextView
                 android:id="@+id/place_number_4"
                 android:layout_width="wrap_content"

@@ -45,8 +45,10 @@ public class PreferencesRecyclerViewAdapter extends RecyclerView.Adapter<Prefere
             public void onClick(View view) {
                 SharedPreferences sharedPref = mContext.getSharedPreferences("com.example.androidchampionsleague",Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPref.edit();
-                editor.putString("team_name", mTeams.get(position).getName());
-                editor.putString("team_image", mTeams.get(position).getLogoUrl());
+                Team chosenTeam = mTeams.get(position);
+                editor.putString("team_name", chosenTeam.getName());
+                editor.putString("team_image", chosenTeam.getLogoUrl());
+                editor.putString("team_website", chosenTeam.getWebsite());
                 editor.apply();
                 mDialog.dismiss();
                 Intent startIntent = new Intent(mContext, PreferencesActivity.class);

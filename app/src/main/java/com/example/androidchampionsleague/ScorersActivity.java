@@ -75,17 +75,35 @@ public class ScorersActivity extends NavigationActivity {
                         Scorer item = new Scorer();
                         JSONObject player = null;
                         JSONObject team = null;
+
                         try {
                             player = s.getJSONObject("player");
-                            team = s.getJSONObject("team");
-                            item.setName(player.getString("name"));
-                            item.setTeam(team.getString("name"));
-                            item.setGoals(s.getInt("numberOfGoals"));
-                            scorersList.add(item);
-
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+                        try {
+                            team = s.getJSONObject("team");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        try {
+                            item.setName(player.getString("name"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        try {
+                            item.setTeam(team.getString("name"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        try {
+                            item.setGoals(s.getInt("numberOfGoals"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        scorersList.add(item);
+
+
                     }
                 }
                 initRecyclerView();

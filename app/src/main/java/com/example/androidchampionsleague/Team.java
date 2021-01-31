@@ -5,9 +5,10 @@ import android.graphics.Bitmap;
 public class Team {
     private int Id;
     private String Name;
-    private int Points;
+    private int Points; //też może być nullable lub można wynieść tablice z punktami do Group
     private String LogoUrl;
     private Integer Position; //nullable; mozna bdz zrezygnowac
+    private String Website; //nullable
 
     public int getId() {
         return Id;
@@ -47,5 +48,13 @@ public class Team {
 
     public void setLogoUrl(String logoUrl) {
         LogoUrl = logoUrl;
+    }
+
+    public String getWebsite() {
+        return Website;
+    }
+
+    public void setWebsite(String website) {
+        Website = website;
     }
 }

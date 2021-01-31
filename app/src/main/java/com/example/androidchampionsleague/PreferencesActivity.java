@@ -1,7 +1,9 @@
 package com.example.androidchampionsleague;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,12 +37,22 @@ public class PreferencesActivity extends NavigationActivity {
         SharedPreferences sharedPref = getSharedPreferences("com.example.androidchampionsleague", Context.MODE_PRIVATE);
         String teamName = sharedPref.getString("team_name","none");
         String teamImageURL = sharedPref.getString("team_image","none");
+        String teamWebsite = sharedPref.getString("team_website", "none");
+
 
         TextView textView = findViewById(R.id.preferences_team_name);
         ImageView imageView = findViewById(R.id.preferences_team_image);
         if(teamName != "none" && teamImageURL != "none") {
             textView.setText(teamName);
             Utils.fetchSvg(this, teamImageURL, imageView);
+            imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent websiteIntent = new Intent ("android.intent.action.VIEW",
+                            Uri.parse(teamWebsite));
+                    startActivity(websiteIntent);
+                }
+            });
         }
         else{
             TextView header = findViewById(R.id.preferences_header);

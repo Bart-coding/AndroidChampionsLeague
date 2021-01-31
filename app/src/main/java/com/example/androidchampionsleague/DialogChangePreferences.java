@@ -84,6 +84,11 @@ public class DialogChangePreferences extends DialogFragment {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+                        try {
+                            team.setWebsite(teamJSON.getString("website"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                         teams.add(team);
                     }
                     Collections.sort(teams, new SortTeamsByName());

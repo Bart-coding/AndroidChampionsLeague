@@ -64,6 +64,7 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         if (matchesList.size()!=0) {
             matchesList.clear();
+            notifyAdapter();
         }
 
         Toast.makeText(getApplicationContext(), "You have Chosen "+matchDays[position], Toast.LENGTH_LONG).show();
@@ -96,7 +97,7 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                    notifyAdapter();
+                    //notifyAdapter();
                     return;
                 }
 

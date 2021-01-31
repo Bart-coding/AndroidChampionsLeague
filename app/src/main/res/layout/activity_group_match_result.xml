@@ -14,11 +14,16 @@
         android:textColor="?attr/colorPrimary"
         android:text="@string/choose_matchday"
         android:textSize="30sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:background="?attr/groupHeader"/>
     <Spinner
         android:id="@+id/results_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorPrimary"/>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

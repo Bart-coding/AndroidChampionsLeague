@@ -33,4 +33,5 @@
     <string name="choose">Wählen</string>
     <string name="go_to_preferences">Gehen Sie zu Einstellungen und dort wählen Sie das Team, das Sie unterstützen möchten</string>
     <string name="error">Der Fehler</string>
+    <string name="matchday">Spieltag</string>
 </resources>

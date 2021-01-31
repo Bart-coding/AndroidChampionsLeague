@@ -1,6 +1,8 @@
 package com.example.androidchampionsleague;
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +33,10 @@ public class MatchResultRecyclerViewAdapter extends RecyclerView.Adapter<MatchRe
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
+        if(position%2==1){
+            holder.parentLayout.setBackgroundColor(getColorByThemeAttr(mContext,R.attr.groupHeader));
+        }
+
         Match match = mMatches.get(position);
         Team homeTeam = match.getHomeTeam();
         Team awayTeam = match.getAwayTeam();
@@ -52,6 +58,13 @@ public class MatchResultRecyclerViewAdapter extends RecyclerView.Adapter<MatchRe
                 //Toast.makeText(mContext, mMatches.get(position), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public static int getColorByThemeAttr(Context context, int attr) {
+        TypedValue typedValue = new TypedValue();
+        Resources.Theme theme = context.getTheme();
+        theme.resolveAttribute(attr, typedValue, true);
+        return typedValue.data;
     }
 
     @Override

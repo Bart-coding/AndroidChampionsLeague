@@ -1,7 +1,6 @@
 package com.example.androidchampionsleague;
 
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -31,9 +30,7 @@ import static com.example.androidchampionsleague.RetrofitInstance.getRetrofitIns
 public class GroupMatchResultActivity extends SensorManager implements AdapterView.OnItemSelectedListener{
 
     private ArrayList<Match> matchesList = new ArrayList<>();
-    //private ArrayList<Match> matchesList2 = new ArrayList<>();
     String urlForTeam = "v2/teams/";
-    //String[] matchDays= {"Matchday 1", "Matchday 2", "Matchday 3", "Matchday 4", "Matchday 5", "Matchday 6" };
     ArrayList<String> matchDays = new ArrayList<>();
     String urlForMatchday = "v2/competitions/CL/matches?season=2019&stage=GROUP_STAGE&matchday=";
     //private RecyclerView recyclerView = findViewById(R.id.recycler_view_concrete_results);
@@ -68,7 +65,7 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
                         e.printStackTrace();
                     }
                     for(int i = 1; i <= currentMatchday; i++){
-                        matchDays.add("Meczdej"+ " " + i);
+                        matchDays.add(getString(R.string.matchday)+ " " + i);
                     }
                     initSpinner();
                 }
@@ -79,20 +76,7 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
             }
         });
 
-        // Linking the Views to Java’s instances
-        Spinner spin1=(Spinner) findViewById(R.id.results_spinner);
-
-        spin1.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
-        //spin1.setSelection(-1,false); //Spinner nie jest wybrany od razu
-        // Now, Create a Array Adapter
-        ArrayAdapter adapter=new ArrayAdapter(this, android.R.layout.simple_spinner_item, matchDays);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // Assigning the adapter to Spinner
-        spin1.setAdapter(adapter);
-
         initRecyclerView();
-
     }
 
     @Override
@@ -101,8 +85,6 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
             matchesList.clear();
             notifyAdapter();
         }
-
-        Toast.makeText(getApplicationContext(), "You have Chosen "+matchDays.get(position), Toast.LENGTH_LONG).show();
         //String selectedMatchDay = matchDays[position];
         Retrofit retrofit = getRetrofitInstance();
         GroupMatchdayService groupMatchdayService = retrofit.create(GroupMatchdayService.class);
@@ -135,8 +117,6 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
                     //notifyAdapter();
                     return;
                 }
-
-                Toast.makeText(getApplicationContext(), "Alright", Toast.LENGTH_LONG).show();
 
                 Log.e("TAG", "response: " + new Gson().toJson(response.body()));
 
@@ -261,8 +241,6 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
                             e.printStackTrace();
                         }
 
-
-                        Toast.makeText(getApplicationContext(), homeTeam.getName(), Toast.LENGTH_LONG).show();
                         match.setHomeTeam(homeTeam);
                         match.setAwayTeam(awayTeam);
                         matchesList.add(match); //dodanie meczu do listy
@@ -385,8 +363,6 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
         MatchResultRecyclerViewAdapter adapter = new MatchResultRecyclerViewAdapter(this, matchesList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-
     }
 
     private void notifyAdapter() {

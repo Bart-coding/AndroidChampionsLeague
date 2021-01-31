@@ -32,5 +32,6 @@
     <string name="choose">Choose</string>
     <string name="go_to_preferences">Go to Preferences and there choose team you want to support</string>
     <string name="error">Error</string>
+    <string name="matchday">Matchday</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

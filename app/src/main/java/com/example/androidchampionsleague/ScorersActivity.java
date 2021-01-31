@@ -126,6 +126,7 @@ public class ScorersActivity extends NavigationActivity {
             }
             @Override
             public void onFailure(Call call, Throwable t) {
+                Toast.makeText(getApplicationContext(), getString(R.string.error) + ": " + t.getMessage(), Toast.LENGTH_LONG).show();
                 return;
             }
         });

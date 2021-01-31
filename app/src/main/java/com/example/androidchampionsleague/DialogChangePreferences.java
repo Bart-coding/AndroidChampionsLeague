@@ -114,6 +114,7 @@ public class DialogChangePreferences extends DialogFragment {
 
             @Override
             public void onFailure(Call call, Throwable t) {
+                Toast.makeText(getActivity().getApplicationContext(), getString(R.string.error) + ": " + t.getMessage(), Toast.LENGTH_LONG).show();
                 return;
             }
         });

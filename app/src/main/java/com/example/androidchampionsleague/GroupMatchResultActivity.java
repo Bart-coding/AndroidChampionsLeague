@@ -87,6 +87,7 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
             }
             @Override
             public void onFailure(Call call, Throwable t) {
+                Toast.makeText(getApplicationContext(), getString(R.string.error) + ": " + t.getMessage(), Toast.LENGTH_LONG).show();
                 return;
             }
         });
@@ -352,7 +353,7 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
 
                         @Override
                         public void onFailure(Call call, Throwable t) {
-                            Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), getString(R.string.error) + ": " + t.getMessage(), Toast.LENGTH_LONG).show();
                         }
                     });
 
@@ -362,7 +363,7 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
 
             @Override
             public void onFailure(Call call, Throwable t) {
-                Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), getString(R.string.error) + ": " + t.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
 

@@ -14,10 +14,10 @@ import java.util.ArrayList;
 
 public class MatchResultRecyclerViewAdapter extends RecyclerView.Adapter<MatchResultRecyclerViewAdapter.ViewHolder>{
 
-    private ArrayList<String> mMatches;
+    private ArrayList<Match> mMatches;
     private Context mContext;
 
-    public MatchResultRecyclerViewAdapter(Context context, ArrayList<String> matches ) {
+    public MatchResultRecyclerViewAdapter(Context context, ArrayList<Match> matches ) {
         mMatches = matches;
         mContext = context;
     }
@@ -31,12 +31,19 @@ public class MatchResultRecyclerViewAdapter extends RecyclerView.Adapter<MatchRe
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
-//        holder.Team1Image.setImageBitmap(mMatches.get(position).getImage1());
-//        holder.Team2Image.setImageBitmap(mMatches.get(position).getImage2());
-//        holder.Team1Name.setText(mMatches.get(position).getName1());
-//        holder.Team2Name.setText(mMatches.get(position).getName2());
-//        holder.Team1Score.setText(mMatches.get(position).getScore1());
-//        holder.Team2Score.setText(mMatches.get(position).getScore2());
+        Match match = mMatches.get(position);
+        Team homeTeam = match.getHomeTeam();
+        Team awayTeam = match.getAwayTeam();
+
+        Utils.fetchSvg(mContext, homeTeam.getLogoUrl(), holder.Team1Image);
+        //holder.Team1Name.setText(homeTeam.getName());
+        holder.Team1Name.setText(homeTeam.getShortName());
+        holder.Team1Score.setText(String.valueOf(match.getHomeFullScore()));
+
+        Utils.fetchSvg(mContext, awayTeam.getLogoUrl(), holder.Team2Image);
+        //holder.Team2Name.setText(awayTeam.getName());
+        holder.Team2Name.setText(awayTeam.getShortName());
+        holder.Team2Score.setText(String.valueOf(match.getAwayFullScore()));
 
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {

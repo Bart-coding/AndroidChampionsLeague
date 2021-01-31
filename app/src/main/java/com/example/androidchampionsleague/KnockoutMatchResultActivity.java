@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class KnockoutMatchResultActivity extends SensorManager {
 
     private String stage;
-    ArrayList<String> matchesList = new ArrayList<>();
+    ArrayList<Match> matchesList = new ArrayList<>(); //<Match>
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -43,11 +43,11 @@
             android:textColor="@color/black"
             android:textSize="18sp"/>
         <TextView
-            android:id="@+id/team_score_2"
+            android:id="@+id/match_team_2_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_toRightOf="@+id/match_team_2_score"
+            android:layout_toLeftOf="@+id/match_team_2_name"
             android:text="2"
             android:textColor="@color/black"
             android:textSize="18sp"/>

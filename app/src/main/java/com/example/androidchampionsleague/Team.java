@@ -6,9 +6,10 @@ public class Team {
     private int Id;
     private String Name;
     private int Points; //też może być nullable lub można wynieść tablice z punktami do Group
-    private String LogoUrl;
+    private String LogoUrl ="brak"; //Tymczasowo
     private Integer Position; //nullable; mozna bdz zrezygnowac
     private String Website; //nullable
+    private String ShortName;
 
     public int getId() {
         return Id;
@@ -56,5 +57,13 @@ public class Team {
 
     public void setWebsite(String website) {
         Website = website;
+    }
+
+    public String getShortName() {
+        return ShortName;
+    }
+
+    public void setShortName(String shortName) {
+        ShortName = shortName;
     }
 }

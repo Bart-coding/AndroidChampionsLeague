@@ -36,6 +36,9 @@ public class MatchResultRecyclerViewAdapter extends RecyclerView.Adapter<MatchRe
         if(position%2==1){
             holder.parentLayout.setBackgroundColor(getColorByThemeAttr(mContext,R.attr.groupHeader));
         }
+        else {
+            holder.parentLayout.setBackgroundColor(getColorByThemeAttr(mContext,R.attr.colorOnPrimary));
+        }
 
         Match match = mMatches.get(position);
         Team homeTeam = match.getHomeTeam();

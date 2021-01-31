@@ -50,6 +50,21 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
             @Override
             public void onResponse(Call call, Response response) {
                 if (!response.isSuccessful()) {
+
+                    JSONObject jsonObjectError = null;
+                    try {
+                        jsonObjectError = new JSONObject(response.errorBody().string());
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    try {
+                        Toast.makeText(getApplicationContext(), getString(R.string.error) + ": " + jsonObjectError.getString("message"), Toast.LENGTH_LONG).show();
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    //notifyAdapter();
                     return;
                 }
                 String obj = new Gson().toJson((response.body()));

@@ -33,7 +33,8 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
     private ArrayList<Match> matchesList = new ArrayList<>();
     //private ArrayList<Match> matchesList2 = new ArrayList<>();
     String urlForTeam = "v2/teams/";
-    String[] matchDays= {"Matchday 1", "Matchday 2", "Matchday 3", "Matchday 4", "Matchday 5", "Matchday 6" };
+    //String[] matchDays= {"Matchday 1", "Matchday 2", "Matchday 3", "Matchday 4", "Matchday 5", "Matchday 6" };
+    ArrayList<String> matchDays = new ArrayList<>();
     String urlForMatchday = "v2/competitions/CL/matches?season=2019&stage=GROUP_STAGE&matchday=";
     //private RecyclerView recyclerView = findViewById(R.id.recycler_view_concrete_results);
 
@@ -43,6 +44,40 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
         super.onCreate(savedInstanceState);
         TryChangeTheme();
         setContentView(R.layout.activity_group_match_result);
+
+        Retrofit retrofit = getRetrofitInstance();
+        GroupsService groupsService = retrofit.create(GroupsService.class);
+        Call<Object> call = groupsService.getGroups();
+
+        call.enqueue(new Callback() {
+            @Override
+            public void onResponse(Call call, Response response) {
+                if (!response.isSuccessful()) {
+                    return;
+                }
+                String obj = new Gson().toJson((response.body()));
+                if (obj!=null) {
+                    JSONObject jsonObj = null;
+                    JSONObject season = null;
+                    int currentMatchday = 0;
+                    try {
+                        jsonObj = new JSONObject(obj);
+                        season = jsonObj.getJSONObject("season");
+                        currentMatchday = season.getInt("currentMatchday");
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    for(int i = 1; i <= currentMatchday; i++){
+                        matchDays.add("Meczdej"+ " " + i);
+                    }
+                    initSpinner();
+                }
+            }
+            @Override
+            public void onFailure(Call call, Throwable t) {
+                return;
+            }
+        });
 
         // Linking the Views to Java’s instances
         Spinner spin1=(Spinner) findViewById(R.id.results_spinner);
@@ -67,7 +102,7 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
             notifyAdapter();
         }
 
-        Toast.makeText(getApplicationContext(), "You have Chosen "+matchDays[position], Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "You have Chosen "+matchDays.get(position), Toast.LENGTH_LONG).show();
         //String selectedMatchDay = matchDays[position];
         Retrofit retrofit = getRetrofitInstance();
         GroupMatchdayService groupMatchdayService = retrofit.create(GroupMatchdayService.class);
@@ -357,5 +392,13 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
     private void notifyAdapter() {
         RecyclerView recyclerView = findViewById(R.id.recycler_view_concrete_results);
         recyclerView.getAdapter().notifyDataSetChanged();
+    }
+
+    private void initSpinner(){
+        Spinner spin1=(Spinner) findViewById(R.id.results_spinner);
+        spin1.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
+        ArrayAdapter adapter=new ArrayAdapter(this, android.R.layout.simple_spinner_item, matchDays);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spin1.setAdapter(adapter);
     }
 }

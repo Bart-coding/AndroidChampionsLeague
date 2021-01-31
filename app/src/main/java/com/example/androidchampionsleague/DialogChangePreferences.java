@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,6 +17,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -40,6 +42,20 @@ public class DialogChangePreferences extends DialogFragment {
             @Override
             public void onResponse(Call call, Response response) {
                 if (!response.isSuccessful()) {
+
+                    JSONObject jsonObjectError = null;
+                    try {
+                        jsonObjectError = new JSONObject(response.errorBody().string());
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    try {
+                        Toast.makeText(getActivity().getApplicationContext(), getString(R.string.error) + ": " + jsonObjectError.getString("message"), Toast.LENGTH_LONG).show();
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     return;
                 }
                 Log.e("TAG", "response: "+new Gson().toJson(response.body()) );

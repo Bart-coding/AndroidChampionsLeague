@@ -18,6 +18,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import retrofit2.Call;
@@ -55,12 +56,16 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
         // Assigning the adapter to Spinner
         spin1.setAdapter(adapter);
 
+        initRecyclerView();
+
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        if (matchesList.size()!=0)
+        if (matchesList.size()!=0) {
             matchesList.clear();
+        }
+
         Toast.makeText(getApplicationContext(), "You have Chosen "+matchDays[position], Toast.LENGTH_LONG).show();
         //String selectedMatchDay = matchDays[position];
         Retrofit retrofit = getRetrofitInstance();
@@ -75,9 +80,26 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
 
             @Override
             public void onResponse(Call call, Response response) {
+
                 if (!response.isSuccessful()) {
+
+                    JSONObject jsonObjectError = null;
+                    try {
+                        jsonObjectError = new JSONObject(response.errorBody().string());
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    try {
+                        Toast.makeText(getApplicationContext(), getString(R.string.error) + ": " + jsonObjectError.getString("message"), Toast.LENGTH_LONG).show();
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    notifyAdapter();
                     return;
                 }
+
                 Toast.makeText(getApplicationContext(), "Alright", Toast.LENGTH_LONG).show();
 
                 Log.e("TAG", "response: " + new Gson().toJson(response.body()));
@@ -91,6 +113,7 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
+
                     JSONArray matches = null;
                     try {
                         matches = jsonObj.getJSONArray("matches");
@@ -215,6 +238,24 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
                     callForTeams.enqueue(new Callback() {
                         @Override
                         public void onResponse(Call call, Response response) {
+                            if (!response.isSuccessful()) {
+
+                                JSONObject jsonObjectError = null;
+                                try {
+                                    jsonObjectError = new JSONObject(response.errorBody().string());
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                                try {
+                                    Toast.makeText(getApplicationContext(), getString(R.string.error) + ": " + jsonObjectError.getString("message"), Toast.LENGTH_LONG).show();
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+
+                                return;
+                            }
                             String obj = new Gson().toJson(response.body());
                             if (obj!=null) {
                                 JSONObject objJSON = null;
@@ -271,7 +312,8 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
                                         }
                                     } //koniec pętli iterującej po liście meczy
 
-                                    initRecyclerView();
+                                    //initRecyclerView ();
+                                    notifyAdapter();
 
                                 } //koniec pętli iterującej po liście 32 drużyn z wewn. response'a
 
@@ -295,8 +337,6 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
             }
         });
 
-
-
     }
 
     @Override
@@ -305,17 +345,16 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
     }
 
     private void initRecyclerView(){
-        RecyclerView recyclerView = findViewById(R.id.recycler_view_concrete_results);
-        /*if ((recyclerView.getAdapter()!=null)) {
-            recyclerView.getAdapter().notifyDataSetChanged();
-            return;
-        }*/
+        RecyclerView recyclerView = findViewById(R.id.recycler_view_concrete_results); //lub globalnie
         MatchResultRecyclerViewAdapter adapter = new MatchResultRecyclerViewAdapter(this, matchesList);
-        // (recyclerView.getAdapter()!=null)
-            //recyclerView.swapAdapter(adapter, true);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
+    }
+
+    private void notifyAdapter() {
+        RecyclerView recyclerView = findViewById(R.id.recycler_view_concrete_results);
+        recyclerView.getAdapter().notifyDataSetChanged();
     }
 }

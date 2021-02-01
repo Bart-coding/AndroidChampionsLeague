@@ -1,14 +1,18 @@
 package com.example.androidchampionsleague;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import org.threeten.bp.LocalDateTime;
 
 import java.util.ArrayList;
 
@@ -54,7 +58,9 @@ public class MatchResultRecyclerViewAdapter extends RecyclerView.Adapter<MatchRe
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(mContext, mMatches.get(position), Toast.LENGTH_SHORT).show();
+//                Intent intent = new Intent(mContext, newClass.class);
+//                intent.putExtra("match",mMatches.get(position));
+//                mContext.startActivity(intent);
             }
         });
     }

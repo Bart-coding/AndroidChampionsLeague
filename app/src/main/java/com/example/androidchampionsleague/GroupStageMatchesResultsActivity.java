@@ -16,6 +16,7 @@ import com.google.gson.Gson;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.threeten.bp.LocalDateTime;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -168,6 +169,16 @@ public class GroupStageMatchesResultsActivity extends SensorManager implements A
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+
+                        // get Date
+                        try{
+                            String DateString = matchObject.getString("utcDate");
+                            DateString = DateString.substring(0, DateString.length() - 1);
+                            match.setDate(LocalDateTime.parse(DateString));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
                         try {
                             match.setGroupName(matchObject.getString("group"));
                         } catch (JSONException e) {
@@ -257,6 +268,14 @@ public class GroupStageMatchesResultsActivity extends SensorManager implements A
 
                         match.setHomeTeam(homeTeam);
                         match.setAwayTeam(awayTeam);
+
+                        // get referee
+                        try{
+                            match.setReferee(matchObject.getJSONArray("referees").getJSONObject(0).getString("name"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
                         matchesList.add(match); //dodanie meczu do listy
                     }//koniec pętli
 

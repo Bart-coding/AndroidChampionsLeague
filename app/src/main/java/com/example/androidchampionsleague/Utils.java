@@ -1,7 +1,9 @@
 package com.example.androidchampionsleague;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.util.Log;
+import android.util.TypedValue;
 import android.widget.ImageView;
 
 import com.pixplicity.sharp.Sharp;
@@ -45,6 +47,13 @@ public class Utils {
                 stream.close();
             }
         });
+    }
+
+    public static int getColorByThemeAttr(Context context, int attr) {
+        TypedValue typedValue = new TypedValue();
+        Resources.Theme theme = context.getTheme();
+        theme.resolveAttribute(attr, typedValue, true);
+        return typedValue.data;
     }
 }
 

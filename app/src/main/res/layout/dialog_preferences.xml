@@ -18,7 +18,7 @@
         android:textColor="?attr/colorPrimary"
         android:textSize="30sp"
         android:gravity="center"
-        android:background="?attr/groupHeader"/>
+        android:background="?attr/HighlightedColorPrimary"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_dialog_preferences"
         android:layout_width="match_parent"

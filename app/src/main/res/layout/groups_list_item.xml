@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/groupBackground">
+        android:background="?attr/HighlightedColorPrimary">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +37,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/groupHeader">
+            android:paddingVertical="1dp"
+            android:background="?attr/HighlightedColorSecondary">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -59,6 +60,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingVertical="1dp"
             android:paddingHorizontal="2dp">
             <TextView
                 android:id="@+id/place_number_1"
@@ -100,6 +102,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingVertical="1dp"
             android:paddingHorizontal="2dp">
             <TextView
                 android:id="@+id/place_number_2"
@@ -141,6 +144,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingVertical="1dp"
             android:paddingHorizontal="2dp">
             <TextView
                 android:id="@+id/place_number_3"
@@ -182,6 +186,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingVertical="1dp"
             android:paddingHorizontal="2dp">
             <TextView
                 android:id="@+id/place_number_4"

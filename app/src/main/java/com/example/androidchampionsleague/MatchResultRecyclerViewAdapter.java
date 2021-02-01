@@ -1,8 +1,6 @@
 package com.example.androidchampionsleague;
 
 import android.content.Context;
-import android.content.res.Resources;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,10 +32,10 @@ public class MatchResultRecyclerViewAdapter extends RecyclerView.Adapter<MatchRe
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
         if(position%2==1){
-            holder.parentLayout.setBackgroundColor(getColorByThemeAttr(mContext,R.attr.groupHeader));
+            holder.parentLayout.setBackgroundColor(Utils.getColorByThemeAttr(mContext,R.attr.HighlightedColorSecondary));
         }
         else {
-            holder.parentLayout.setBackgroundColor(getColorByThemeAttr(mContext,R.attr.colorOnPrimary));
+            holder.parentLayout.setBackgroundColor(Utils.getColorByThemeAttr(mContext,R.attr.colorOnPrimary));
         }
 
         Match match = mMatches.get(position);
@@ -45,12 +43,10 @@ public class MatchResultRecyclerViewAdapter extends RecyclerView.Adapter<MatchRe
         Team awayTeam = match.getAwayTeam();
 
         Utils.fetchSvg(mContext, homeTeam.getLogoUrl(), holder.Team1Image);
-        //holder.Team1Name.setText(homeTeam.getName());
         holder.Team1Name.setText(homeTeam.getShortName());
         holder.Team1Score.setText(String.valueOf(match.getHomeFullScore()));
 
         Utils.fetchSvg(mContext, awayTeam.getLogoUrl(), holder.Team2Image);
-        //holder.Team2Name.setText(awayTeam.getName());
         holder.Team2Name.setText(awayTeam.getShortName());
         holder.Team2Score.setText(String.valueOf(match.getAwayFullScore()));
 
@@ -61,13 +57,6 @@ public class MatchResultRecyclerViewAdapter extends RecyclerView.Adapter<MatchRe
                 //Toast.makeText(mContext, mMatches.get(position), Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    public static int getColorByThemeAttr(Context context, int attr) {
-        TypedValue typedValue = new TypedValue();
-        Resources.Theme theme = context.getTheme();
-        theme.resolveAttribute(attr, typedValue, true);
-        return typedValue.data;
     }
 
     @Override

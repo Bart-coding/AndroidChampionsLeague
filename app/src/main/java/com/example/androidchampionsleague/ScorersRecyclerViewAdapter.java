@@ -30,6 +30,13 @@ public class ScorersRecyclerViewAdapter extends RecyclerView.Adapter<ScorersRecy
 
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
+        if(position%2==1){
+            holder.parentLayout.setBackgroundColor(Utils.getColorByThemeAttr(mContext,R.attr.HighlightedColorSecondary));
+        }
+        else {
+            holder.parentLayout.setBackgroundColor(Utils.getColorByThemeAttr(mContext,R.attr.colorOnPrimary));
+        }
+
         holder.number.setText(String.valueOf(position+1));
         holder.name.setText(mScorers.get(position).getName());
         holder.goals.setText(String.valueOf(mScorers.get(position).getGoals()));

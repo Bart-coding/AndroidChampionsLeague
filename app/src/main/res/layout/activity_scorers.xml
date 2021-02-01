@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:id="@+id/parent_layout_scorers"
-            android:background="?attr/groupHeader">
+            android:background="?attr/HighlightedColorPrimary">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

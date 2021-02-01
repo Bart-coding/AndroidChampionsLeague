@@ -36,6 +36,13 @@ public class PreferencesRecyclerViewAdapter extends RecyclerView.Adapter<Prefere
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
+        if(position%2==1){
+            holder.parentLayout.setBackgroundColor(Utils.getColorByThemeAttr(mContext,R.attr.HighlightedColorSecondary));
+        }
+        else {
+            holder.parentLayout.setBackgroundColor(Utils.getColorByThemeAttr(mContext,R.attr.colorOnPrimary));
+        }
+
         Team team = mTeams.get(position);
         holder.name.setText(team.getName());
         Utils.fetchSvg(mContext, team.getLogoUrl(), holder.image);

@@ -3,12 +3,16 @@ package com.example.androidchampionsleague;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.AudioAttributes;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.io.IOException;
 
 public class HomeActivity extends NavigationActivity {
 
@@ -22,6 +26,33 @@ public class HomeActivity extends NavigationActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
 
         setPreferences();
+
+        MediaPlayer ring= MediaPlayer.create(getApplicationContext(),R.raw.swiftly_610);
+        ring.start();
+
+        /*String url = "https://www.youtube.com/watch?v=BgomX3qD-iA"; // your URL here
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        /*mediaPlayer.setAudioAttributes(
+                AudioAttributes.Builder()
+                        .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                        .setUsage(AudioAttributes.USAGE_MEDIA)
+                        .build()
+        );
+        try {
+            mediaPlayer.setDataSource(url);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            mediaPlayer.prepare(); // might take long! (for buffering, etc)
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        mediaPlayer.start();*/
+
+
+
+
     }
 
     @Override

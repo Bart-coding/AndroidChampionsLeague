@@ -32,8 +32,7 @@ public class GroupStageMatchesResultsActivity extends SensorManager implements A
     private ArrayList<Match> matchesList = new ArrayList<>();
     String urlForTeam = "v2/teams/";
     ArrayList<String> matchDays = new ArrayList<>();
-    String urlForMatchday = "v2/competitions/CL/matches?season=2019&stage=GROUP_STAGE&matchday=";
-    //private RecyclerView recyclerView = findViewById(R.id.recycler_view_concrete_results);
+    final String stage = "GROUP_STAGE";
 
 
     @Override
@@ -103,12 +102,11 @@ public class GroupStageMatchesResultsActivity extends SensorManager implements A
         }
         //String selectedMatchDay = matchDays[position];
         Retrofit retrofit = getRetrofitInstance();
-        GroupMatchdayService groupMatchdayService = retrofit.create(GroupMatchdayService.class);
+        MatchesService matchesService = retrofit.create(MatchesService.class);
 
         int incrementedPosition = position + 1;
 
-        Call<Object> call = groupMatchdayService.getMatches(urlForMatchday+incrementedPosition);
-        //Call<Object> call = groupMatchdayService.getMatches();
+        Call<Object> call = matchesService.getMatches(stage, incrementedPosition);
 
         call.enqueue(new Callback() {
 
@@ -342,7 +340,7 @@ public class GroupStageMatchesResultsActivity extends SensorManager implements A
                                         }
                                     } //koniec pętli iterującej po liście meczy
 
-                                    //initRecyclerView ();
+
                                     notifyAdapter();
 
                                 } //koniec pętli iterującej po liście 32 drużyn z wewn. response'a

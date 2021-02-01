@@ -27,9 +27,7 @@ import static com.example.androidchampionsleague.RetrofitInstance.getRetrofitIns
 
 public class GroupsActivity extends NavigationActivity {
 
-    private ArrayList<Group> groupsList = new ArrayList<>(); //wczesniej <String>
-    //private ArrayList<String> groupsNames = new ArrayList<>();
-    final String groupsNames[] = {"A", "B", "C", "D", "E", "F"}; //albo po kolei a potem posortuje sie literami; podobnie z kolejnoscia w tabeli
+    private ArrayList<Group> groupsList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,15 +35,6 @@ public class GroupsActivity extends NavigationActivity {
         TryChangeTheme();
         setContentView(R.layout.activity_groups);
         drawerLayout = findViewById(R.id.drawer_layout);
-
-        /*groupsNames.add("A");
-        groupsNames.add("B");
-        groupsNames.add("C");
-        groupsNames.add("D");
-        groupsNames.add("E");
-        groupsNames.add("F");
-        groupsNames.add("G");
-        groupsNames.add("H");*/
 
         Retrofit retrofit = getRetrofitInstance();
         GroupsService groupsService = retrofit.create(GroupsService.class);
@@ -193,7 +182,7 @@ public class GroupsActivity extends NavigationActivity {
     }
 
     private void initRecyclerView(){
-        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.recycler_view_groups);
         GroupsRecyclerViewAdapter adapter = new GroupsRecyclerViewAdapter(this, groupsList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

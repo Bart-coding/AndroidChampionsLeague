@@ -27,5 +27,5 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycler_view_concrete_results"/>
+        android:id="@+id/recycler_view_group_stage_m_r"/>
 </LinearLayout>

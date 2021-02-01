@@ -10,5 +10,5 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycler_view_knockout_match_result"/>
+        android:id="@+id/recycler_view_knockout_stage_m_r"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

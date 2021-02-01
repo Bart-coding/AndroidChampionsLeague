@@ -375,14 +375,14 @@ public class GroupStageMatchesResultsActivity extends SensorManager implements A
     }
 
     private void initRecyclerView(){
-        RecyclerView recyclerView = findViewById(R.id.recycler_view_concrete_results); //lub globalnie
+        RecyclerView recyclerView = findViewById(R.id.recycler_view_group_stage_m_r); //lub globalnie
         MatchResultRecyclerViewAdapter adapter = new MatchResultRecyclerViewAdapter(this, matchesList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     private void notifyAdapter() {
-        RecyclerView recyclerView = findViewById(R.id.recycler_view_concrete_results);
+        RecyclerView recyclerView = findViewById(R.id.recycler_view_group_stage_m_r);
         recyclerView.getAdapter().notifyDataSetChanged();
     }
 

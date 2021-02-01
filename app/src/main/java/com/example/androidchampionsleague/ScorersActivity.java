@@ -133,7 +133,7 @@ public class ScorersActivity extends NavigationActivity {
     }
 
     private void initRecyclerView(){
-        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.recycler_view_scorers);
         ScorersRecyclerViewAdapter adapter = new ScorersRecyclerViewAdapter(this, scorersList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

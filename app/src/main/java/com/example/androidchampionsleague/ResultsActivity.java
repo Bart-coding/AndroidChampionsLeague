@@ -21,8 +21,6 @@ public class ResultsActivity extends NavigationActivity {
         setContentView(R.layout.activity_results);
         drawerLayout = findViewById(R.id.drawer_layout);
 
-        //listView = findViewById(R.id.list_view);
-
         initStagesList();
     }
 
@@ -41,7 +39,7 @@ public class ResultsActivity extends NavigationActivity {
     }
 
     private void initRecyclerView(){
-        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.recycler_view_results);
         ResultsRecyclerViewAdapter adapter = new ResultsRecyclerViewAdapter(this, stagesList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

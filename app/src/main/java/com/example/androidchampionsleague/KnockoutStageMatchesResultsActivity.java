@@ -30,7 +30,7 @@ public class KnockoutStageMatchesResultsActivity extends SensorManager {
     }
 
     private void initRecyclerView(){
-        RecyclerView recyclerView = findViewById(R.id.recycler_view_knockout_match_result);
+        RecyclerView recyclerView = findViewById(R.id.recycler_view_knockout_stage_m_r);
         MatchResultRecyclerViewAdapter adapter = new MatchResultRecyclerViewAdapter(this, matchesList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

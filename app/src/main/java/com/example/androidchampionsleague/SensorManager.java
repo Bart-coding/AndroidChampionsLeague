@@ -4,7 +4,6 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.TypedValue;
 import android.widget.Toast;
 
@@ -78,15 +77,15 @@ public class SensorManager extends AppCompatActivity {
         TypedValue outValue = new TypedValue();
         getTheme().resolveAttribute(R.attr.themeName, outValue, true);
 
-        if(SensorValueInstance.getCurrentSensorValue() >= maxValue / 3 ) {
+        if(SensorValueInstance.getCurrentSensorValue() >= 10000) {
             // zmiana tylko wtedy, gdy poprzedni to ciemny motyw
-            if("dark".equals(outValue.string)){
+            if((outValue.string).equals("dark")){
                 return 1;
             }
         }
         else {
             // zmiana tylko wtedy, gdy poprzedni to jasny motyw
-            if("light".equals(outValue.string)) {
+            if((outValue.string).equals("light")) {
                 return 2;
             }
         }
@@ -94,12 +93,10 @@ public class SensorManager extends AppCompatActivity {
     }
 
     private void ChangeThemeToLight(){
-        Log.e("Theme","zmiana na jasny " + SensorValueInstance.getCurrentSensorValue());
         setTheme(R.style.Theme_AndroidChampionsLeague);
     }
 
     private void ChangeThemeToDark(){
-        Log.e("Theme","zmiana na ciemny " + SensorValueInstance.getCurrentSensorValue());
         setTheme(R.style.ThemeDark_AndroidChampionsLeague);
     }
 

@@ -1,8 +1,10 @@
 package com.example.androidchampionsleague;
 
+import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -43,6 +45,7 @@ public class KnockoutStageMatchesResultsActivity extends SensorManager {
 
         call.enqueue(new Callback() {
 
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onResponse(Call call, Response response) {
 
@@ -105,7 +108,7 @@ public class KnockoutStageMatchesResultsActivity extends SensorManager {
                         try{
                             String DateString = matchObject.getString("utcDate");
                             DateString = DateString.substring(0, DateString.length() - 1);
-                            match.setDate(LocalDateTime.parse(DateString));
+                            match.setDateString(DateString);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

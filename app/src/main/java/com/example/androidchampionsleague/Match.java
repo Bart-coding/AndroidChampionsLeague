@@ -1,5 +1,6 @@
 package com.example.androidchampionsleague;
 
+
 import org.threeten.bp.LocalDateTime;
 
 import java.io.Serializable;
@@ -13,7 +14,7 @@ public class Match implements Serializable {
     private int[] AwayScores = new int[2];
     private String groupName;
     private String Referee;
-    private LocalDateTime Date;
+    private String Date;
 
 
     public int getId() {
@@ -80,10 +81,10 @@ public class Match implements Serializable {
         Referee = referee;
     }
 
-    public LocalDateTime getDate() {
+    public String getDateString() {
         return Date;
     }
-    public void setDate(LocalDateTime date) {
+    public void setDateString(String date) {
         Date = date;
     }
 }

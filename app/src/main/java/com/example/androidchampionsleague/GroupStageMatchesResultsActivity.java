@@ -174,7 +174,7 @@ public class GroupStageMatchesResultsActivity extends SensorManager implements A
                         try{
                             String DateString = matchObject.getString("utcDate");
                             DateString = DateString.substring(0, DateString.length() - 1);
-                            match.setDate(LocalDateTime.parse(DateString));
+                            match.setDateString(DateString);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

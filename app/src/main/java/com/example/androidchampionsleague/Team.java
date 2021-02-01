@@ -1,8 +1,8 @@
 package com.example.androidchampionsleague;
 
-import android.graphics.Bitmap;
+import java.io.Serializable;
 
-public class Team {
+public class Team implements Serializable {
     private int Id;
     private String Name;
     private int Points; //też może być nullable lub można wynieść tablice z punktami do Group

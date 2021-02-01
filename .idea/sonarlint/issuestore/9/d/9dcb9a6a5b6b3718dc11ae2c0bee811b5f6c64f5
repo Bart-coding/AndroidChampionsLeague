@@ -1,29 +1,33 @@
 
-k
-java:S2259z"IA "NullPointerException" could be thrown; "tableObject" is nullable here.(ªάΔ¥ÿÿÿÿÿ8ƒ»¦στ.
-i
-java:S2259]"LA "NullPointerException" could be thrown; "standingObject" is nullable here.(πΤ8ƒ»¦στ.
-Y	java:S110"=This class has 11 parents which is greater than 5 authorized.(Ή¶Χ³8½ΗΙΘτ.
-i
-java:S2259M"GA "NullPointerException" could be thrown; "standings" is nullable here.(»αήÒψÿÿÿÿ8ƒ»¦στ.
-U
-java:S1128"8Remove this unused import 'com.google.gson.JsonElement'.(π†³8ƒ»¦στ.
 g
-java:S2259G"EA "NullPointerException" could be thrown; "jsonObj" is nullable here.(«άΈ©ψÿÿÿÿ8ƒ»¦στ.
-9
-java:S3626«"Remove this redundant jump.(ϋΑέ…8ƒ»¦στ.
-l
-java:S2259"IA "NullPointerException" could be thrown; "teamJObject" is nullable here.(ΩΉΟΤόÿÿÿÿ8ƒ»¦στ.
+java:S2259W"EA "NullPointerException" could be thrown; "jsonObj" is nullable here.(«άΈ©ψÿÿÿÿ8ƒ»¦στ.
+i
+java:S2259]"GA "NullPointerException" could be thrown; "standings" is nullable here.(»αήÒψÿÿÿÿ8ƒ»¦στ.
 Z
-java:S1197"8Move the array designator from the variable to the type.(–ΙΝϊÿÿÿÿ8ƒ»¦στ.
-]	java:S125"<This block of commented-out lines of code should be removed.(Ϋϊψωÿÿÿÿ8ƒ»¦στ.
-X	java:S125Q"<This block of commented-out lines of code should be removed.(™°Ίω8ƒ»¦στ.
+java:S1197 "8Move the array designator from the variable to the type.(–ΙΝϊÿÿÿÿ8–ªΓΡυ.
+j
+java:S2259D"MA "NullPointerException" could be thrown; "jsonObjectError" is nullable here.(ΣΉΈ„8–ªΓΡυ.
 `
-java:S2259m"CA "NullPointerException" could be thrown; "table" is nullable here.(ύοΫζ8ƒ»¦στ.
-P
-java:S1481X".Remove this unused "groupName" local variable.(©€εΒϊÿÿÿÿ8ƒ»¦στ.
+java:S2259}"CA "NullPointerException" could be thrown; "table" is nullable here.(ύοΫζ8ƒ»¦στ.
+]	java:S125"<This block of commented-out lines of code should be removed.(Ϋϊψωÿÿÿÿ8–ªΓΡυ.
+]	java:S125)"<This block of commented-out lines of code should be removed.(ΎÒΠϋÿÿÿÿ8–ªΓΡυ.
+l
+java:S2259 "IA "NullPointerException" could be thrown; "teamJObject" is nullable here.(ΩΉΟΤόÿÿÿÿ8ƒ»¦στ.
+a
+java:S2147@"DCombine this catch with the one at line 62, which has the same body.(ο­£Δ8–ªΓΡυ.
 Q
-java:S37404"/Provide the parametrized type for this generic.(Τέ®έύÿÿÿÿ8ƒ»¦στ.
-]	java:S125'"<This block of commented-out lines of code should be removed.(ΎÒΠϋÿÿÿÿ8ƒ»¦στ.
+java:S37406"/Provide the parametrized type for this generic.(Τέ®έύÿÿÿÿ8–ªΓΡυ.
+Y	java:S110"=This class has 11 parents which is greater than 5 authorized.(Ή¶Χ³8–ªΓΡυ.
+9
+java:S3626»"Remove this redundant jump.(ϋΑέ…8ƒ»¦στ.
+P
+java:S1481h".Remove this unused "groupName" local variable.(©€εΒϊÿÿÿÿ8ƒ»¦στ.
+U
+java:S1128"8Remove this unused import 'com.google.gson.JsonElement'.(π†³8–ªΓΡυ.
+X	java:S125a"<This block of commented-out lines of code should be removed.(™°Ίω8ƒ»¦στ.
 t
-java:S3776!"RRefactor this method to reduce its Cognitive Complexity from 64 to the 15 allowed.(¨ώÿÿÿÿ8ƒ»¦στ.
+java:S3776#"RRefactor this method to reduce its Cognitive Complexity from 73 to the 15 allowed.(¨ώÿÿÿÿ8–ªΓΡυ.
+i
+java:S2259m"LA "NullPointerException" could be thrown; "standingObject" is nullable here.(πΤ8ƒ»¦στ.
+l
+java:S2259"IA "NullPointerException" could be thrown; "tableObject" is nullable here.(ªάΔ¥ÿÿÿÿÿ8ƒ»¦στ.

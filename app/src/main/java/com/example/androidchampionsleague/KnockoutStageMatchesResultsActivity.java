@@ -4,12 +4,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class KnockoutMatchResultActivity extends SensorManager {
+public class KnockoutStageMatchesResultsActivity extends SensorManager {
 
     private String stage;
     ArrayList<Match> matchesList = new ArrayList<>(); //<Match>
@@ -18,7 +17,7 @@ public class KnockoutMatchResultActivity extends SensorManager {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TryChangeTheme();
-        setContentView(R.layout.activity_knockout_match_result);
+        setContentView(R.layout.activity_knockout_stage_matches_results);
 
         getIncomingIntent();
     }

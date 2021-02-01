@@ -1,15 +1,14 @@
 
-]	java:S125""<This block of commented-out lines of code should be removed.(ƒŠ”Êüÿÿÿÿ8™ƒ¤ô.
-q	java:S116?"URename this field "Team1Score" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éí··8ÕËÍ÷ô.
-”
-java:S1319"rThe type of the "matches" object should be an interface such as "List" rather than the implementation "ArrayList".(Æÿ…°úÿÿÿÿ8ö®ä£ô.
-v	java:S1169"URename this field "Team1Image" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Ä£ıÿÿÿÿ8ùƒË÷ô.
-X	java:S125-"<This block of commented-out lines of code should be removed.(ÜóÂŠ8šîŒ¤ô.
-o	java:S116="TRename this field "Team2Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß¾›c8Ğ”Í÷ô.
-q	java:S116:"URename this field "Team2Image" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·€â8‰íË÷ô.
-u	java:S116<"TRename this field "Team1Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÇ¢ıûÿÿÿÿ8íİÌ÷ô.
+o	java:S116T"TRename this field "Team2Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß¾›c8Ğ”Í÷ô.
+X	java:S125="<This block of commented-out lines of code should be removed.(ÜóÂŠ8šîŒ¤ô.
+X	java:S1250"<This block of commented-out lines of code should be removed.(¡‘Á‘8©…ÇÑõ.
 J
-java:S1604*"(Make this anonymous inner class a lambda(Ì’ïĞüÿÿÿÿ8ö®ä£ô.
-N
-java:S1068",Remove this unused "mContext" private field.(»úÅ¾øÿÿÿÿ8šîŒ¤ô.
-q	java:S116@"URename this field "Team2Score" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹åÆ¥8€ŠÎ÷ô.
+java:S1604:"(Make this anonymous inner class a lambda(Ì’ïĞüÿÿÿÿ8ö®ä£ô.
+q	java:S116V"URename this field "Team1Score" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éí··8ÕËÍ÷ô.
+q	java:S116W"URename this field "Team2Score" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹åÆ¥8€ŠÎ÷ô.
+]	java:S1255"<This block of commented-out lines of code should be removed.(•†°öøÿÿÿÿ8©…ÇÑõ.
+q	java:S116Q"URename this field "Team2Image" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·€â8‰íË÷ô.
+u	java:S116S"TRename this field "Team1Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÇ¢ıûÿÿÿÿ8íİÌ÷ô.
+
+java:S1319"rThe type of the "matches" object should be an interface such as "List" rather than the implementation "ArrayList".(İªïš8ö®ä£ô.
+v	java:S116P"URename this field "Team1Image" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Ä£ıÿÿÿÿ8ùƒË÷ô.

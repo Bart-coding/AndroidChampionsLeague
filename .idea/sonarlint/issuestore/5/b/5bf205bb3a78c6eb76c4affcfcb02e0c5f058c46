@@ -1,0 +1,17 @@
+
+d
+java:S2259O"GA "NullPointerException" could be thrown; "teamsJSON" is nullable here.(…„šà8äŒ õ.
+c
+java:S2259Y"FA "NullPointerException" could be thrown; "teamJSON" is nullable here.(ñøÊÎ8äŒ õ.
+8
+java:S3626u"Remove this redundant jump.(ûÁİ…8äŒ õ.
+g
+java:S2259J"EA "NullPointerException" could be thrown; "jsonObj" is nullable here.(–—Ùœúÿÿÿÿ8äŒ õ.
+Q
+java:S3740)"/Provide the parametrized type for this generic.(Ôİ®İıÿÿÿÿ8¸ÿÒÑõ.
+o
+java:S22597"MA "NullPointerException" could be thrown; "jsonObjectError" is nullable here.(€°Éêùÿÿÿÿ8¸ÿÒÑõ.
+o
+java:S3776""RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(«ÃÀ÷8¸ÿÒÑõ.
+a
+java:S21473"DCombine this catch with the one at line 49, which has the same body.(ï­£Ä8¸ÿÒÑõ.

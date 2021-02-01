@@ -27,7 +27,7 @@ import retrofit2.Retrofit;
 
 import static com.example.androidchampionsleague.RetrofitInstance.getRetrofitInstance;
 
-public class GroupMatchResultActivity extends SensorManager implements AdapterView.OnItemSelectedListener{
+public class GroupStageMatchesResultsActivity extends SensorManager implements AdapterView.OnItemSelectedListener{
 
     private ArrayList<Match> matchesList = new ArrayList<>();
     String urlForTeam = "v2/teams/";
@@ -40,7 +40,7 @@ public class GroupMatchResultActivity extends SensorManager implements AdapterVi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TryChangeTheme();
-        setContentView(R.layout.activity_group_match_result);
+        setContentView(R.layout.activity_group_stage_matches_results);
 
         Retrofit retrofit = getRetrofitInstance();
         GroupsService groupsService = retrofit.create(GroupsService.class);

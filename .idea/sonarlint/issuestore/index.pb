@@ -3,8 +3,6 @@
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-v
-Fapp/src/main/java/com/example/androidchampionsleague/MainActivity.java,a\9\a9c67e2d22ebe9aa04c04aa12df016b95adfee94
 y
 Iapp/src/main/java/com/example/androidchampionsleague/AboutUsActivity.java,f\1\f1d7aee0ab777fa75c04dc1b8f3868fba2871e89
 x
@@ -23,8 +21,6 @@ w
 Gapp/src/main/java/com/example/androidchampionsleague/SensorManager.java,0\c\0c686edafd3969aa078dd8e497c94d799e4f3ce6
 }
 Mapp/src/main/java/com/example/androidchampionsleague/SensorValueInstance.java,2\7\27eb1cf09b9a04f0634d74ac2df71b4427f16d61
-z
-Japp/src/main/java/com/example/androidchampionsleague/SettingsActivity.java,e\0\e02bf1881257f67235bc0b777a865ca244c8a673
 y
 Iapp/src/main/java/com/example/androidchampionsleague/ResultsActivity.java,1\2\12f9e90b047c5705c8bb57f8cf2054aa2710cf6c
 x
@@ -51,3 +47,7 @@ Tapp/src/main/java/com/example/androidchampionsleague/ResultsRecyclerViewAdapter
 Rapp/src/main/java/com/example/androidchampionsleague/GroupMatchResultActivity.java,9\d\9d8ff5378799f8fad57bc6b803f63b0a799a52a3
 Ö
 Uapp/src/main/java/com/example/androidchampionsleague/KnockoutMatchResultActivity.java,3\4\3432d25803e4001bd152ab5c7633fd5978bf1031
+à
+Xapp/src/main/java/com/example/androidchampionsleague/PreferencesRecyclerViewAdapter.java,1\c\1cba061abd94c3b7df93078705c67f31190ae093
+Å
+Qapp/src/main/java/com/example/androidchampionsleague/DialogChangePreferences.java,5\b\5bf205bb3a78c6eb76c4affcfcb02e0c5f058c46

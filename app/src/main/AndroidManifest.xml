@@ -11,8 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidChampionsLeague">
-        <activity android:name=".KnockoutMatchResultActivity"/>
-        <activity android:name=".GroupMatchResultActivity" />
+        <activity android:name=".KnockoutStageMatchesResultsActivity"/>
+        <activity android:name=".GroupStageMatchesResultsActivity" />
         <activity android:name=".AboutUsActivity" />
         <activity android:name=".GroupsActivity" />
         <activity android:name=".ResultsActivity" />

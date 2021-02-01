@@ -1,9 +1,56 @@
 
+j
+java:S2259¼"LA "NullPointerException" could be thrown; "halfTimeScores" is nullable here.(Ú„ôÔ8Ûå›Òõ.
+R
+java:S3740ü"/Provide the parametrized type for this generic.(µœœ‘üÿÿÿÿ8Ûå›Òõ.
+b
+java:S2259ª"DA "NullPointerException" could be thrown; "scores" is nullable here.(ï“¿ÿ8Ûå›Òõ.
+l
+java:S2259™"IA "NullPointerException" could be thrown; "matchObject" is nullable here.(»§×¤ıÿÿÿÿ8Ûå›Òõ.
 Q
-java:S3740"/Provide the parametrized type for this generic.(Ú¿ğšÿÿÿÿÿ8¨Áî§ô.
-£
-java:S1186&"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ8¨Áî§ô.
-R	java:S110
-"=This class has 10 parents which is greater than 5 authorized.(¤ñé
+java:S3740a"/Provide the parametrized type for this generic.(Ôİ®İıÿÿÿÿ8Ûå›Òõ.
+d
+java:S2259©"FA "NullPointerException" could be thrown; "teamJSON" is nullable here.(©‘èó8Ûå›Òõ.
+¤
+java:S1186å"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ8Ûå›Òõ.
+o
+java:S2259Ö"LA "NullPointerException" could be thrown; "homeTeamObject" is nullable here.(åµ“­ıÿÿÿÿ8Ûå›Òõ.
+Y	java:S125É"<This block of commented-out lines of code should be removed.(À¢ï8Ûå›Òõ.
+l
+java:S1192Â"IDefine a constant instead of duplicating this literal "awayTeam" 3 times.(•˜šşÿÿÿÿ8Ûå›Òõ.
+o
+java:S2259·"LA "NullPointerException" could be thrown; "fullTimeScores" is nullable here.(ºÿÊıÿÿÿÿ8Ûå›Òõ.
+R
+java:S3740ø"/Provide the parametrized type for this generic.(Ú¿ğšÿÿÿÿÿ8Ûå›Òõ.
+b
+java:S2147m"ECombine this catch with the one at line 107, which has the same body.(ï­£Ä8Ûå›Òõ.
+Y	java:S110"=This class has 10 parents which is greater than 5 authorized.(¤ñé8Ûå›Òõ.
+c
+java:S2147†"ECombine this catch with the one at line 260, which has the same body.(ï­£Ä8Ûå›Òõ.
+c
+java:S2259"EA "NullPointerException" could be thrown; "matches" is nullable here.(¤Üçá8Ûå›Òõ.
+R
+java:S3740ø"/Provide the parametrized type for this generic.(Ú¿ğšÿÿÿÿÿ8Ûå›Òõ.
+8
+java:S3626K"Remove this redundant jump.(ûÁİ…8Ûå›Òõ.
+[
+java:S1155T">Use isEmpty() to check whether the collection is empty or not.(À³Ú8Ûå›Òõ.
+X	java:S125u"<This block of commented-out lines of code should be removed.(–”áõ8Ûå›Òõ.
 Q
-java:S3740"/Provide the parametrized type for this generic.(Ú¿ğšÿÿÿÿÿ8¨Áî§ô.
+java:S37401"/Provide the parametrized type for this generic.(Ôİ®İıÿÿÿÿ8Ûå›Òõ.
+l
+java:S1192·"IDefine a constant instead of duplicating this literal "homeTeam" 3 times.(ºÿÊıÿÿÿÿ8Ûå›Òõ.
+j
+java:S2259q"MA "NullPointerException" could be thrown; "jsonObjectError" is nullable here.(Ó¹¸„8Ûå›Òõ.
+c
+java:S2259‡"EA "NullPointerException" could be thrown; "jsonObj" is nullable here.(Îä·¨8Ûå›Òõ.
+o
+java:S3776S"SRefactor this method to reduce its Cognitive Complexity from 169 to the 15 allowed.(«à¯8Ûå›Òõ.
+{	java:S135¹"YReduce the total number of break and continue statements in this loop to use at most one.(Ò·İ‰øÿÿÿÿ8Ûå›Òõ.
+X	java:S125X"<This block of commented-out lines of code should be removed.(–Şí8Ûå›Òõ.
+X	java:S125_"<This block of commented-out lines of code should be removed.(µ»ŒÉ8Ûå›Òõ.
+X	java:S125$"<This block of commented-out lines of code should be removed.(Çç¾³8Ûå›Òõ.
+o
+java:S2259ê"LA "NullPointerException" could be thrown; "awayTeamObject" is nullable here.(÷»Ô®øÿÿÿÿ8Ûå›Òõ.
+k
+java:S2259Š"MA "NullPointerException" could be thrown; "jsonObjectError" is nullable here.(Ó¹¸„8Ûå›Òõ.

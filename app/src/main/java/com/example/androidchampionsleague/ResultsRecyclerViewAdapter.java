@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,10 +38,10 @@ public class ResultsRecyclerViewAdapter extends RecyclerView.Adapter<ResultsRecy
             public void onClick(View view) {
                 Intent intent;
                 if(position == 0){
-                    intent = new Intent(mContext, GroupMatchResultActivity.class);
+                    intent = new Intent(mContext, GroupStageMatchesResultsActivity.class);
                 }
                 else{
-                    intent = new Intent(mContext, KnockoutMatchResultActivity.class);
+                    intent = new Intent(mContext, KnockoutStageMatchesResultsActivity.class);
                 }
                 intent.putExtra("stage",mStages.get(position).getHeader());
                 mContext.startActivity(intent);

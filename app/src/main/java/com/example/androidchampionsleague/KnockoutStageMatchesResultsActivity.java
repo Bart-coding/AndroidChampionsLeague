@@ -14,7 +14,6 @@ import com.google.gson.Gson;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.threeten.bp.LocalDateTime;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,7 +26,7 @@ import retrofit2.Retrofit;
 public class KnockoutStageMatchesResultsActivity extends SensorManager {
 
     private String stage;
-    ArrayList<Match> matchesList = new ArrayList<>(); //<Match>
+    ArrayList<Match> matchesList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +63,7 @@ public class KnockoutStageMatchesResultsActivity extends SensorManager {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                    //notifyAdapter();
+
                     return;
                 }
 
@@ -75,7 +74,7 @@ public class KnockoutStageMatchesResultsActivity extends SensorManager {
 
                     JSONObject jsonObj = null;
                     try {
-                        jsonObj = new JSONObject(obj);//<--
+                        jsonObj = new JSONObject(obj);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }

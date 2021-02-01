@@ -83,7 +83,6 @@ public class ScorersActivity extends NavigationActivity {
                         JSONObject s = null;
                         try {
                             s = scorers.getJSONObject(i);
-                            //Log.e("TAG", "scorer: "+ s);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

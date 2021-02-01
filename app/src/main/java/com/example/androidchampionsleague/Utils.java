@@ -22,7 +22,6 @@ public class Utils {
 
     // this method is used to fetch svg and load it into target imageview.
     public static void fetchSvg(Context context, String url, final ImageView target) {
-        Log.d("Siema", "Elo");
         if (httpClient == null) {
             httpClient = new OkHttpClient.Builder()
                     .cache(new Cache(context.getCacheDir(), 5 * 1024 * 1014))
@@ -35,7 +34,7 @@ public class Utils {
             @Override
             public void onFailure(Call call, IOException e) {
                 // we are adding a default image if we gets any error.
-                target.setImageResource(R.drawable.groups_place_promotion_circle); //-> Obrazek domyslny
+                target.setImageResource(R.drawable.groups_place_promotion_circle); //Obrazek domyslny
             }
 
             @Override

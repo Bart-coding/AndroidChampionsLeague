@@ -5,10 +5,10 @@ import java.io.Serializable;
 public class Team implements Serializable {
     private int Id;
     private String Name;
-    private int Points; //też może być nullable lub można wynieść tablice z punktami do Group
-    private String LogoUrl ="brak"; //Tymczasowo
-    private Integer Position; //nullable; mozna bdz zrezygnowac
-    private String Website; //nullable
+    private int Points;
+    private String LogoUrl ="brak";
+    private Integer Position;
+    private String Website;
     private String ShortName;
 
     public int getId() {

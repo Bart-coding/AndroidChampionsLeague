@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -89,14 +88,12 @@ public class GroupsActivity extends NavigationActivity {
                         }
 
                         Group group = new Group();
-                        //JSONObject groupName = null; //JSONElement
                         String groupName = null;
                         JSONArray table = null;
 
                             try {
                             //Pobranie nazwy grupy
-                            group.setName(standingObject.getString("group"));//<--
-                                //groupName = standingObject.getJSONObject("group");//<--
+                            group.setName(standingObject.getString("group"));
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -104,15 +101,15 @@ public class GroupsActivity extends NavigationActivity {
 
                             //Pobranie druzyn
                             try {
-                                table = standingObject.getJSONArray("table"); //////<--
+                                table = standingObject.getJSONArray("table");
                                 Log.e("TAG", "table: "+ table);
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
 
-                            for (int j = 0; j < table.length(); j++) { //iteracja po drużynach
-                                JSONObject tableObject = null; //teamObject
+                            for (int j = 0; j < table.length(); j++) {
+                                JSONObject tableObject = null;
 
                                 try {
                                     tableObject = table.getJSONObject(j);//<--
@@ -124,21 +121,21 @@ public class GroupsActivity extends NavigationActivity {
                                 Team team = new Team();
                                 try {
                                     //Pobranie i ustawienie pozycji w grupie
-                                    team.setPosition(tableObject.getInt("position"));//<-- //Integer
+                                    team.setPosition(tableObject.getInt("position"));
                                     } catch (JSONException e) {
                                         e.printStackTrace();
                                 }
 
                                 try {
                                     //Pobranie i ustawienie punktow danej drużynie
-                                    team.setPoints(tableObject.getInt("points"));//<-- //Integer
+                                    team.setPoints(tableObject.getInt("points"));
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
                                 JSONObject teamJObject = null;
 
                                 try {
-                                    teamJObject = tableObject.getJSONObject("team");//<--
+                                    teamJObject = tableObject.getJSONObject("team");
 
                                     } catch (JSONException e) {
                                         e.printStackTrace();
@@ -146,17 +143,17 @@ public class GroupsActivity extends NavigationActivity {
 
                                 //ustawienie id, nazwy i logo
                                 try {
-                                    team.setId(teamJObject.getInt("id"));//<--
+                                    team.setId(teamJObject.getInt("id"));
                                     } catch (JSONException e) {
                                         e.printStackTrace();
                                 }
                                 try {
-                                    team.setName(teamJObject.getString("name"));//<--
+                                    team.setName(teamJObject.getString("name"));
                                     } catch (JSONException e) {
                                         e.printStackTrace();
                                 }
                                 try { //Bitmapa
-                                    team.setLogoUrl(teamJObject.getString("crestUrl"));//<--
+                                    team.setLogoUrl(teamJObject.getString("crestUrl"));
                                     } catch (JSONException e) {
                                         e.printStackTrace();
                                 }
